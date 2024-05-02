@@ -1,52 +1,39 @@
 import React from 'react'
+import image from '../Components/Gorgeous Queen.png';
+import './Login.css'
 
 export default function Login() {
   return (
+    <div className='login-full'>
+    
+  <form className='Login' style={{display:'flex',justifyContent:'space-evenly'}}>
     <div>
-    <section class="vh-100">
-        <div class="container py-5 h-100">
-            <div class="row d-flex align-items-center justify-content-center h-100">
-                <div class="col-md-8 col-lg-7 col-xl-6">
-                <img src="https://freedesignfile.com/upload/2018/10/Attractive-fashion-model-and-fashion-makeup-Stock-Photo-03.jpg" jsaction="VQAsE" class="sFlh5c pT0Scc iPVvYb" alt="Attractive fashion model and fashion makeup Stock Photo 03 free download"/>
-            </div>
-        <div class="col-md-7 col-lg-5 col-xl-5 offset-xl-1">
-          <form>
-            <div data-mdb-input-init class="form-outline mb-4">
-                <h2>Welcome Back</h2>
-                <h5>Sign in to continue your progress</h5>
-                <label class="form-label" for="form1Example13">Email address</label>
-                <input type="email" id="form1Example13" class="form-control form-control-lg" />
-            </div>
-
-        
-            <div data-mdb-input-init class="form-outline mb-4">
-                <label class="form-label" for="form1Example23">Password</label>
-                <input type="password" id="form1Example23" class="form-control form-control-lg" />
-            </div>
-
-            <div class="d-flex justify-content-around align-items-center mb-4">
-           
-            <div class="form-check">
-                <input class="form-check-input" type="checkbox" value="" id="form1Example3" />
-                <label class="form-check-label" for="form1Example3"> Remember me </label>
-            </div>
-            <a href="#!">Forgot password?</a>
-            </div>
-
-            <buttons>Sign in</buttons><br/>
-            {/* <button type="/Register" data-mdb-button-init data-mdb-ripple-init class="btn btn-primary btn-lg btn-block mb-5">Sign in</button><br/><br/> */}
-            
-            <h6>Don't have an account? <a href="/Register" >Register Here</a></h6>
-          
-
-
-        </form>
-      </div>
+      <img src="https://freedesignfile.com/upload/2018/10/Attractive-fashion-model-and-fashion-makeup-Stock-Photo-03.jpg" alt="Attractive fashion "/>
     </div>
+
+    <div className='login-text'>
+      <img class="img3" src={image} style={{marginLeft:'80px'}}/><br/><br/>
+      <h1>Login</h1>
+      <label>Email Address</label><br/>
+      <input type='Email' placeholder='Enter your email'></input><br/><br/>
+
+      <label>Password</label><br/>
+      <input type='Password' placeholder='Enter your password'></input><br/><br/>
+
+      <button className='btn15'>Login</button><br/><br/>
+
+      <p style={{fontSize:'15px',textAlign:'center'}}>Don't have an account? <a href="/role" style={{textDecoration:'none',color:'rgb(221, 23, 89'}}>Register Here</a></p><br/>
+
+    </div>
+  </form>
   </div>
-</section>
-</div>
+
 
   )
 }
+
+
+
+
+
 

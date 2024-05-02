@@ -1,129 +1,68 @@
-/* .container {
-  border: 1px solid black;
-  width: 1800px;
-} */
-.sFlh5c {
-  width: 700px;
-  height: 700px;
-  border-radius: 40px;
-
-}
-
-.btn {
-  background-color: rgb(210, 40, 68);
-}
-
-/* .text-center {
-  text-align: center;
-} */
-.bx {
-  font-size: 40px;
-  justify-content: space-between;
-  padding: 15px;
-}
-
-/* .icons {
-  margin-top: 50px;
-} */
-
-.Nav {
-  background-color: violet;
-  font-size: 25px;
-  text-align: end;
-  font-family: 'Times New Roman', Times, serif;
-}
-
-.Nav ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-}
-
-.Nav ul li {
-  display: inline;
-}
-
-.Nav ul li a {
-  color: white;
-  text-decoration: none;
-  padding: 14px 20px;
-  justify-content: space-between;
-}
-
-.btn8 {
-  margin-left: 10px;
-  margin-top: 10px;
-  margin-bottom: 10px;
-}
-
-#text {
-  background-color: lightblue;
-  margin-left: 20px;
-  margin-top: 10px;
-  border: none;
-}
-
-.img3 {
-  width: 120px;
-}
-
-/* .btn {
-  width: 50px;
- 
-
-} */
-
-/* .container23 {
-  background-image: url(https://img.freepik.com/premium-photo/makeup-products_144962-2898.jpg?ga=GA1.2.1063502306.1703176539&amp;semt=ais );
-  text-align: center;
-  justify-content: space-between;
-} */
-
-h1 {
-  color: aliceblue;
-  align-items: center;
-  text-align: center;
-
-}
-
-buttons {
-  width: 150px;
-  height: 30px;
-  padding: 30px;
-  color: white;
-  background-color: rgb(206, 71, 93);
-  font-size: 20px;
-  border-radius: 15px;
-  align-items: center;
-  display: flex;
-  justify-content: space-between;
-}
-
-button {
-  width: 150px;
-  height: 30px;
-  padding: 30px;
-  background-color: rgb(206, 71, 93);
-  font-size: 20px;
-  color: white;
-  border-radius: 15px;
-  align-items: center;
-  margin-left: 800px;
-  display: flex;
-  justify-content: space-between;
-  margin-right: 200px;
-}
-
-.list1 {
-  background-color: rgb(181, 178, 178);
-
-}
-
-p {
-  margin-left: 500px;
-  display: flex;
-  justify-content: space-between;
-}
-h2 {
-  font-size: 80px;
-}
+  /* Navbar */
+  .img3{
+    height: 120px;
+  }
+  .navbar{
+    padding-left: 80px;
+    padding-right: 80px;
+  }
+  h1 {
+    text-align: center;
+  }
+  /* Contact */
+  /* .container {
+    margin-right: 10px;
+    margin-top: 30px;
+  } */
+  /* .form1 {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 40px;
+    border: 1px solid #ccc;
+    border-radius: 30px;
+    background-color: rgb(246, 170, 183);
+    box-shadow: 0 2px 5px blue;
+  }
+  .form-label5 {
+    font-weight: bold;
+    font-size: 20px;
+    display: block;
+    margin-bottom: 18px;
+    color: #333;
+  }
+  .form-control {
+    width: 100%; 
+    padding: 15px; 
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+  .form-control:focus {
+    border-color: black;
+    outline: none;
+    box-shadow: 0 0 5px rgb(245, 131, 150); 
+  } */
+  /* .btn15 {
+    background-color: rgb(245, 131, 150); 
+    color: white;
+    padding: 10px 35px; 
+    font-size: 22px;
+    border: none;
+    border-radius: 10px; 
+    cursor: pointer;
+    background-color: rgb(221, 23, 89); 
+    transition: background-color 0.3s;
+  } */
+  /* Beauticians */
+  .btn12{
+    background-color: rgb(245, 131, 150); 
+    color: white;
+    padding: 5px 10px; 
+    font-size: 20px;
+    border: none;
+    border-radius: 10px; 
+    cursor: pointer;
+    background-color: rgb(221, 23, 89); 
+    transition: background-color 0.2s;
+  }
+  

@@ -1,0 +1,33 @@
+.img1 {
+    width: 600px;
+    margin-left: 180px;
+    margin-top: 30px;
+}
+.star {
+    color: yellow;
+    /* margin-left: 50px; */
+}
+.btn10 {
+    /* background-color: rgb(245, 131, 150);  */
+    color: white;
+    padding: 5px 15px; 
+    font-size: 23px;
+    border: none;
+    border-radius: 10px; 
+    margin-left: 830px;
+    cursor: pointer;
+    background-color: rgb(221, 23, 89); 
+    transition: background-color 0.2s;
+}
+.container6 {
+    display: flex;
+    justify-content: space-evenly;
+}
+.beauty h2 {
+    color: rgb(230, 128, 145);
+    font-weight: 800;
+}
+.profile-details {
+    color: rgb(230, 128, 145);
+    margin-left: 250px;
+}

@@ -1,66 +1,42 @@
 import React from 'react'
+import image from '../Components/Gorgeous Queen.png';
 
 export default function Register() {
   return (
-    <div>
-    <section class="vh-100">
-        <div class="container py-5 h-100">
-            <div class="row d-flex align-items-center justify-content-center h-100">
-                <div class="col-md-8 col-lg-7 col-xl-6">
-                <img src="https://cruise.jobs/uploads/slots/a-day-in-the-life-of-a-beautician.jpg" jsaction="VQAsE" class="sFlh5c pT0Scc iPVvYb" alt="A day in the life of a Beautician on a cruise ship"/>
-            </div>
-        <div class="col-md-7 col-lg-5 col-xl-5 offset-xl-1">
-          <form>
-            <div data-mdb-input-init class="form-outline mb-4">
-                <h2>Beautician Register</h2>
-                <h5>Begin your journey with us today</h5>
-                <label class="form-label" for="form1Example13">First Name</label>
-                <input type="email" id="form1Example13" class="form-control form-control-lg" />
-                <label class="form-label" for="form1Example23">Last Name</label>
-                <input type="password" id="form1Example23" class="form-control form-control-lg" />
-            </div>
 
-            <div data-mdb-input-init class="form-outline mb-4">
-                <label class="form-label" for="form1Example23">Email</label>
-                <input type="password" id="form1Example23" class="form-control form-control-lg" />
-            </div>
-
-            <div data-mdb-input-init class="form-outline mb-4">
-                <label class="form-label" for="form1Example23">Password</label>
-                <input type="password" id="form1Example23" class="form-control form-control-lg" />
-            </div>
-
-            <div data-mdb-input-init class="form-outline mb-4">
-                <label class="form-label" for="form1Example23">Shop Register Number</label>
-                <input type="password" id="form1Example23" class="form-control form-control-lg" />
-            </div>
-
-            <div data-mdb-input-init class="form-outline mb-4">
-                <label class="form-label" for="form1Example23">Shop Place</label>
-                <input type="password" id="form1Example23" class="form-control form-control-lg" />
-            </div>
-
-            <div data-mdb-input-init class="form-outline mb-4">
-                <label class="form-label" for="form1Example23">Course Certificates</label>
-                <input type="password" id="form1Example23" class="form-control form-control-lg" />
-            </div>
-
-
-            <buttons>Submit</buttons>
-
-          {/* <button type="Submit" data-mdb-button-init data-mdb-ripple-init class="btn btn-primary btn-lg btn-block">Submit</button> */}
-
-            {/* <p>Already signed up ? </p> */}
+    <div className='login-full'>
+    
+      <form className='Login' style={{display:'flex',justifyContent:'space-evenly'}}>
+        <div>
           
+          <img src="https://freedesignfile.com/upload/2018/10/Attractive-fashion-model-and-fashion-makeup-Stock-Photo-03.jpg" alt="Attractive fashion "/>
+        </div>
 
+        <div className='login-text'>
+          <img class="img3" src={image} style={{marginLeft:'80px'}}/>
+          <h1>Beautician Register</h1>
+          <label>Email Address</label><br/>
+          <input type='Email' placeholder='Enter your email'></input><br/><br/>
 
-        </form>
-      </div>
+          <label>Password</label><br/>
+          <input type='Password' placeholder='Enter your password'></input><br/><br/>
+
+          <label>Shop Registration Number</label><br/>
+          <input type='text' placeholder='Enter your registration number'></input><br/><br/>
+
+          <label>Shop Place</label><br/>
+          <input type='text' placeholder='Enter your place'></input><br/><br/>
+
+          <label>Course Certificates</label><br/>
+          <input type='file' placeholder='Import your files'></input><br/><br/>
+
+          <button className='btn15'>Submit</button><br/>
+
+        </div>
+      </form>
     </div>
-  </div>
-</section>
-</div>
+
 
   )
 }
-
+    

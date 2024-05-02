@@ -1,32 +1,37 @@
 import './App.css';
 import { Route,Routes } from 'react-router-dom';
-// import Home from './Components/Landing';
-import About from './Pages/About';
-import Login from './Components/Login';
-import Register from './Components/Beauty Register';
-import UserRegister from './Components/User Register';
-import Landing from './Components/Landing';
-// import Home from './Pages/Home';
-import Navbar from '../src/Components/Landing'
+
+import Landing from './Components/Landing'
+import Login from './Components/Login'
+import About from './Pages/About'
+import Services from './Pages/Packages'
+import Contact from './Pages/Contact Us'
+import BR from './Components/Beauty Register'
+import UR from './Components/User Register'
+import Pro from './Pages/Beauticians'
+import Who from './Components/Who'
+import Pretty from './Pages/Beautypro'
+import OS from './Pages/Ourservices'
+
+
 
 function App() {
   return (
     <div className="App">
       <Routes>
         <Route path='/' element ={<Landing/>}/>
-        <Route path='/About' element ={<About/>}/>
         <Route path='/login' element ={<Login/>}/>
-        <Route path='/Register' element ={<Register/>}/>
+        <Route path='/About' element ={<About/>}/>
+        <Route path='/packages' element ={<Services/>}/>
+        <Route path='/Contact' element ={<Contact/>}/>
+        <Route path='/Register' element ={<BR/>}/>
+        <Route path='/URegister' element ={<UR/>}/>
+        <Route path='/profile' element ={<Pro/>}/>
+        <Route path='/role' element ={<Who/>}/>
+        <Route path='/Beauty' element ={<Pretty/>}/>
+        <Route path='/Services' element ={<OS/>}/>
 
-
-      </Routes>
-
-
-      {/* <Navbar/> */}
-      {/* <Login/> */}
-      {/* <Register/><br/><br/><br/><br/> */}
-      <UserRegister/>
-      {/* <footer/> */}
+      </Routes>    
     </div>
   );
 }
