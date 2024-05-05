@@ -16,7 +16,7 @@ function Beautypro() {
         <div className='profile-details'>
             <h4 class="card-title" style={{marginTop:'20px'}}>Name:- Ann Julie</h4>
             <h4 class="card-title" style={{marginTop:'20px'}}>Shop Name:- Queen Beauty Shop</h4>
-            <h4 class="card-title" style={{marginTop:'20px'}}>Experiences:- 5</h4><br/>
+            <h4 class="card-title" style={{marginTop:'20px'}}>Experiences:- 5 Years</h4><br/>
             
             <div className='star'>
             <span class="fa fa-star checked" />
@@ -24,11 +24,142 @@ function Beautypro() {
             <span class="fa fa-star checked" />
             <span class="fa fa-star checked" />
             <span class="fa fa-star checked" />
+            </div><br/><br/>
             </div>
             </div>
-      </div>
+      <div className='beauty-table'>
+  
+    <table border="10">
+      <thead className='Profile5'><br/>
+        <tr>
+          <th>Time</th>
+          <th>Monday 29/04</th>
+          <th>Tuesday 30/04</th>
+          <th>Wednesday 01/05</th>
+          <th>Thursday 02/05</th>
+          <th>Friday 03/05</th>
+          <th>Saturday 04/05</th>
+          <th>Sunday 05/05</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>8.00 a.m</td>
+          <td><button style={{backgroundColor:'green'}}>Available</button></td>
+          <td><button style={{backgroundColor:'red'}}>Not Available</button></td>
+          <td><button style={{backgroundColor:'green'}}>Available</button></td>
+          <td><button style={{backgroundColor:'green'}}>Available</button></td>
+          <td><button style={{backgroundColor:'green'}}>Available</button></td>
+          <td><button style={{backgroundColor:'red'}}>Not Available</button></td>
+          <td><button style={{backgroundColor:'green'}}>Available</button></td>
+        </tr>
+        <tr>
+          <td>9.00 a.m</td>
+          <td><button style={{backgroundColor:'red'}}>Not Available</button></td>
+          <td><button style={{backgroundColor:'green'}}>Available</button></td>
+          <td><button style={{backgroundColor:'green'}}>Available</button></td>
+          <td><button style={{backgroundColor:'red'}}>Not Available</button></td>
+          <td><button style={{backgroundColor:'green'}}>Available</button></td>
+          <td><button style={{backgroundColor:'green'}}>Available</button></td>
+          <td><button style={{backgroundColor:'green'}}>Available</button></td>
+        </tr>
+        <tr>
+          <td>10.00 a.m</td>
+          <td><button style={{backgroundColor:'green'}}>Available</button></td>
+          <td><button style={{backgroundColor:'red'}}>Not Available</button></td>
+          <td><button style={{backgroundColor:'green'}}>Available</button></td>
+          <td><button style={{backgroundColor:'green'}}>Available</button></td>
+          <td><button style={{backgroundColor:'red'}}>Not Available</button></td>
+          <td><button style={{backgroundColor:'green'}}>Available</button></td>
+          <td><button style={{backgroundColor:'red'}}>Not Available</button></td>
+        </tr>
+        <tr>
+          <td>11.00 a.m</td>
+          <td><button style={{backgroundColor:'green'}}>Available</button></td>
+          <td><button style={{backgroundColor:'red'}}>Not Available</button></td>
+          <td><button style={{backgroundColor:'red'}}>Not Available</button></td>
+          <td><button style={{backgroundColor:'green'}}>Available</button></td>
+          <td><button style={{backgroundColor:'red'}}>Not Available</button></td>
+          <td><button style={{backgroundColor:'red'}}>Not Available</button></td>
+          <td><button style={{backgroundColor:'red'}}>Not Available</button></td>
+        </tr>
+        <tr>
+          <td>12.00 p.m</td>
+          <td><button style={{backgroundColor:'red'}}>Not Available</button></td>
+          <td><button style={{backgroundColor:'green'}}>Available</button></td>
+          <td><button style={{backgroundColor:'red'}}>Not Available</button></td>
+          <td><button style={{backgroundColor:'green'}}>Available</button></td>
+          <td><button style={{backgroundColor:'red'}}>Not Available</button></td>
+          <td><button style={{backgroundColor:'green'}}>Available</button></td>
+          <td><button style={{backgroundColor:'green'}}>Available</button></td>
+        </tr>
+        <tr>
+          <td>1.00 p.m</td>
+          <td><button style={{backgroundColor:'green'}}>Available</button></td>
+          <td><button style={{backgroundColor:'green'}}>Available</button></td>
+          <td><button style={{backgroundColor:'green'}}>Available</button></td>
+          <td><button style={{backgroundColor:'red'}}>Not Available</button></td>
+          <td><button style={{backgroundColor:'green'}}>Available</button></td>
+          <td><button style={{backgroundColor:'red'}}>Not Available</button></td>
+          <td><button style={{backgroundColor:'green'}}>Available</button></td>
+        </tr>
+        <tr>
+          <td>2.00 p.m</td>
+          <td><button style={{backgroundColor:'red'}}>Not Available</button></td>
+          <td><button style={{backgroundColor:'red'}}>Not Available</button></td>
+          <td><button style={{backgroundColor:'green'}}>Available</button></td>
+          <td><button style={{backgroundColor:'red'}}>Not Available</button></td>
+          <td><button style={{backgroundColor:'green'}}>Available</button></td>
+          <td><button style={{backgroundColor:'red'}}>Not Available</button></td>
+          <td><button style={{backgroundColor:'green'}}>Available</button></td>
+        </tr>
+        <tr>
+          <td>3.00 p.m</td>
+          <td><button style={{backgroundColor:'green'}}>Available</button></td>
+          <td><button style={{backgroundColor:'red'}}>Not Available</button></td>
+          <td><button style={{backgroundColor:'red'}}>Not Available</button></td>
+          <td><button style={{backgroundColor:'green'}}>Available</button></td>
+          <td><button style={{backgroundColor:'green'}}>Available</button></td>
+          <td><button style={{backgroundColor:'green'}}>Available</button></td>
+          <td><button style={{backgroundColor:'red'}}>Not Available</button></td>
+        </tr>
+        <tr>
+          <td>4.00 p.m</td>
+          <td><button style={{backgroundColor:'red'}}>Not Available</button></td>
+          <td><button style={{backgroundColor:'green'}}>Available</button></td>
+          <td><button style={{backgroundColor:'red'}}>Not Available</button></td>
+          <td><button style={{backgroundColor:'green'}}>Available</button></td>
+          <td><button style={{backgroundColor:'red'}}>Not Available</button></td>
+          <td><button style={{backgroundColor:'red'}}>Not Available</button></td>
+          <td><button style={{backgroundColor:'red'}}>Not Available</button></td>
+        </tr>
+        <tr>
+          <td>5.00 p.m</td>
+          <td><button style={{backgroundColor:'green'}}>Available</button></td>
+          <td><button style={{backgroundColor:'green'}}>Available</button></td>
+          <td><button style={{backgroundColor:'red'}}>Not Available</button></td>
+          <td><button style={{backgroundColor:'green'}}>Available</button></td>
+          <td><button style={{backgroundColor:'red'}}>Not Available</button></td>
+          <td><button style={{backgroundColor:'green'}}>Available</button></td>
+          <td><button style={{backgroundColor:'green'}}>Available</button></td>
+        </tr>
+        <tr>
+          <td>6.00 p.m</td>
+          <td><button style={{backgroundColor:'green'}}>Available</button></td>
+          <td><button style={{backgroundColor:'red'}}>Not Available</button></td>
+          <td><button style={{backgroundColor:'green'}}>Available</button></td>
+          <td><button style={{backgroundColor:'green'}}>Available</button></td>
+          <td><button style={{backgroundColor:'green'}}>Available</button></td>
+          <td><button style={{backgroundColor:'green'}}>Available</button></td>
+          <td><button style={{backgroundColor:'green'}}>Available</button></td>
+        </tr><br/>
+      </tbody>
+    </table>
 
-            <h2 style={{marginTop:'40px',textAlign:'center',fontWeight:'600'}}>Their Works</h2><br/>
+  </div>
+  </div>
+
+            <h2 style={{marginTop:'80px',textAlign:'center',fontWeight:'600'}}>Their Works</h2><br/><br/>
 
           <div className='container6'>
             <div class="card" style={{width: '20rem'}}>
@@ -45,9 +176,8 @@ function Beautypro() {
             </div>
           </div><br/><br/>
 
-            <button className='btn10'>Book Now</button><br/><br/>
+         <a href='/Book'><button className='btn10'>Book Now</button><br/><br/></a>
         </div>
-    </div>
       
     
   )

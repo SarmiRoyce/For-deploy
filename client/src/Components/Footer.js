@@ -6,7 +6,7 @@ function Footer() {
     <div>
         <footer class="bg-body-tertiary text-center text-lg-start">
   <div class="container p-4">
-    <div class="row">
+    <div class="row" style={{display:'flex',justifyContent:'space-between'}}>
       <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
 
         <ul class="list-unstyled mb-0">
@@ -26,7 +26,7 @@ function Footer() {
             <a href="/" class="text-body">Home</a>
           </li>
           <li>
-            <a href="/Services" class="text-body">Ourservices</a>
+            <a href="/Services" class="text-body">Our services</a>
           </li>
           <li>
             <a href="/Profile" class="text-body">Beauticians</a>

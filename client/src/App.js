@@ -12,6 +12,7 @@ import Pro from './Pages/Beauticians'
 import Who from './Components/Who'
 import Pretty from './Pages/Beautypro'
 import OS from './Pages/Ourservices'
+import Book from './Pages/Book'
 
 
 
@@ -30,6 +31,7 @@ function App() {
         <Route path='/role' element ={<Who/>}/>
         <Route path='/Beauty' element ={<Pretty/>}/>
         <Route path='/Services' element ={<OS/>}/>
+        <Route path='/Book' element ={<Book/>}/>
 
       </Routes>    
     </div>

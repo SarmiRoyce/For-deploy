@@ -1,3 +1,33 @@
+.Login {
+    padding: 40px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    background-color: white;
+    border-radius: 8px;
+    width: 1000px;
+    display: flex;
+    align-items: center;
+}
+.login-full {
+    background-color: rgb(203, 128, 128);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.login-text label {
+    font-size: 20px;
+}
+.login-text input {
+    border-radius: 10px;
+    width: 340px;
+    height: 45px;
+    padding: 8px;
+    border: 1px solid black;
+}
+.login-text h1 {
+    font-weight: 800;
+    text-align: center;
+}
 .btn15 {
     background-color: rgb(245, 131, 150);
     color: white;
@@ -9,39 +39,4 @@
     cursor: pointer;
     background-color: rgb(221, 23, 89);
     transition: background-color 0.3s;
-}
-
-.Login {
-    padding: 40px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-    background-color: white;
-    border-radius: 8px;
-    width: 1000px;
-    display: flex;
-    /* flex-direction: column; */
-    align-items: center;
-}
-
-.login-full {
-    background-color: rgb(203, 128, 128);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-}
-.login-text label {
-    font-size: 20px;
-   
-}
-.login-text input {
-    border-radius: 10px;
-    width: 340px;
-    height: 45px;
-    padding: 8px;
-    border: 1px solid black;
-   
-}
-.login-text h1 {
-    font-weight: 800;
-    text-align: center;
 }

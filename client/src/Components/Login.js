@@ -13,7 +13,7 @@ export default function Login() {
 
     <div className='login-text'>
       <img class="img3" src={image} style={{marginLeft:'80px'}}/><br/><br/>
-      <h1>Login</h1>
+      <h1 style={{marginLeft:'30px'}}>Login</h1>
       <label>Email Address</label><br/>
       <input type='Email' placeholder='Enter your email'></input><br/><br/>
 

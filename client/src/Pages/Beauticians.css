@@ -4,10 +4,6 @@
 .card:hover{
     transform: scale(1.05);
 }
-/* .card1 {
-    display: flex;
-    justify-content: space-evenly;
-} */
 .btn12{
     background-color: rgb(245, 131, 150); 
     color: white;
@@ -21,7 +17,6 @@
 }
 .container6 {
     display: flex;
-    /* justify-content: space-between; */
     margin-right: 100px;
 }
   

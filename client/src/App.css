@@ -9,6 +9,9 @@
   h1 {
     text-align: center;
   }
+  .nav-link:hover {
+    color:  rgb(224, 118, 135);
+  }
   /* Contact */
   /* .container {
     margin-right: 10px;

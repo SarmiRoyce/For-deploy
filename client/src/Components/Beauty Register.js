@@ -8,13 +8,12 @@ export default function Register() {
     
       <form className='Login' style={{display:'flex',justifyContent:'space-evenly'}}>
         <div>
-          
-          <img src="https://freedesignfile.com/upload/2018/10/Attractive-fashion-model-and-fashion-makeup-Stock-Photo-03.jpg" alt="Attractive fashion "/>
+          <img src="https://images.pexels.com/photos/11742213/pexels-photo-11742213.jpeg?cs=srgb&dl=pexels-imadclicks-11742213.jpg&fm=jpg" alt="Attractive fashion " style={{height:'780px',width:'420px'}}/>
         </div>
 
         <div className='login-text'>
-          <img class="img3" src={image} style={{marginLeft:'80px'}}/>
-          <h1>Beautician Register</h1>
+          <img class="img3" src={image} style={{marginLeft:'80px'}}/><br/><br/>
+          <h1>Beautician Register</h1><br/>
           <label>Email Address</label><br/>
           <input type='Email' placeholder='Enter your email'></input><br/><br/>
 

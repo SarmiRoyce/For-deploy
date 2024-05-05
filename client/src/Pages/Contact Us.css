@@ -1,21 +1,18 @@
 .contact-full {
   background-color: rgb(52, 51, 51);
-  /* background: linear-gradient(135deg, #FFC0CB, #ffe4e1); */
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
-  /* margin-bottom: 30px; */
+  height: 90vh;
 }
 .Contact {
   padding: 40px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
   background-color: white;
   border-radius: 10px;
-  width: 800px;
+  width: 680px;
   display: flex;
   justify-content: space-evenly;
-  /* flex-direction: column; */
   align-items: center;
 }
 .contact-text label {
@@ -31,11 +28,11 @@
  
 }
 .contact-text h1 {
+  color: rgb(230, 128, 145);
   font-weight: 800;
   text-align: center;
 }
 .btn15 {
-  background-color: rgb(245, 131, 150); 
   color: white;
   padding: 10px 35px; 
   font-size: 23px;

@@ -8,12 +8,12 @@ export default function UserRegister() {
     
       <form className='Login' style={{display:'flex',justifyContent:'space-evenly',width:'1200px'}}>
         <div>
-          <img src="https://content.jdmagicbox.com/comp/bidar/m2/9999p8482.8482.180626152315.d4m2/catalogue/apsara-beauty-parlour-hallikhed-bidar-bidar-beauty-parlours-y43tudewu1.jpg" alt='bridal' style={{height:'800px'}}/>
+          <img src="https://content.jdmagicbox.com/comp/bidar/m2/9999p8482.8482.180626152315.d4m2/catalogue/apsara-beauty-parlour-hallikhed-bidar-bidar-beauty-parlours-y43tudewu1.jpg" alt='bridal' style={{height:'780px'}}/>
         </div>
 
         <div className='login-text'>
-          <img class="img3" src={image} style={{marginLeft:'80px'}}/>
-          <h1>User Register</h1>
+          <img class="img3" src={image} style={{marginLeft:'80px'}}/><br/><br/>
+          <h1 style={{marginLeft:'50px'}}>User Register</h1><br/>
           <label>First Name</label><br/>
           <input type='text' placeholder='Enter your first name'></input><br/><br/>
 

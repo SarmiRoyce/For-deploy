@@ -5,10 +5,8 @@
 }
 .star {
     color: yellow;
-    /* margin-left: 50px; */
 }
 .btn10 {
-    /* background-color: rgb(245, 131, 150);  */
     color: white;
     padding: 5px 15px; 
     font-size: 23px;
@@ -31,3 +29,20 @@
     color: rgb(230, 128, 145);
     margin-left: 250px;
 }
+.beauty-table {
+    color: rgb(230, 128, 145);
+    font-size: 18px;
+    margin-left: 230px;
+}
+table tr td {
+    width: 178px;
+}
+table tr td button {
+    border-radius: 10px;
+    color: white;
+    font-weight: bold;
+}
+/* .Profile5 {
+    margin-left: 80px;
+} */
+
