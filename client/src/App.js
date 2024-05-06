@@ -13,10 +13,13 @@ import Who from './Components/Who'
 import Pretty from './Pages/Beautypro'
 import OS from './Pages/Ourservices'
 import Book from './Pages/Book'
+import Admin from './Pages/Admin'
+import Profilebeauty from './Pages/Profile'
 
 
 
 function App() {
+
   return (
     <div className="App">
       <Routes>
@@ -32,6 +35,9 @@ function App() {
         <Route path='/Beauty' element ={<Pretty/>}/>
         <Route path='/Services' element ={<OS/>}/>
         <Route path='/Book' element ={<Book/>}/>
+        <Route path='/Admin' element ={<Admin/>}/>
+        <Route path='/Profilebeauty' element ={<Profilebeauty/>}/>
+        
 
       </Routes>    
     </div>

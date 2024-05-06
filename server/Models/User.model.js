@@ -1,15 +1,15 @@
 const Mongoose = require ("mongoose");
 const schema = new Mongoose.Schema({
-    id:{
+    email:{
         type:String
     },
     name:{
         type:String
     },
-    rating:{
+    password:{
         type:String
     }
 })
 
-const Rating = Mongoose.model('Rating',schema);
-module.exports = Rating;
+const Users = Mongoose.model('Users',schema);
+module.exports = Users;

@@ -12,14 +12,14 @@ function Book() {
           <form className='Book' >
 
             <div className='book-text'>
-              <h1>Book Appoinment</h1>
-              <label>Beautician Name</label><br/>
+              <h1>Book Appointment</h1>
+              <label>Beautician's Name</label><br/>
               <input type='Text' placeholder='Enter your name' ></input><br/><br/>
 
-              <label>Customer Name</label><br/>
+              <label>Customer's Name</label><br/>
               <input type='Text' placeholder='Enter your name' ></input><br/><br/>
 
-              <label>Package Name</label><br/>
+              <label>Package</label><br/>
               <input type='Text' placeholder='Enter your package' ></input><br/><br/>
 
               <label>Date</label><br/>

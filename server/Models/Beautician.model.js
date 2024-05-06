@@ -1,31 +1,31 @@
 const Mongoose = require ("mongoose");
 const schema = new Mongoose.Schema ({
-    Email: {
+    email: {
         type:String,
-        require:true,
-        unique:true,
+        // require:true,
+        // unique:true,
     },
-    Password: {
+    password: {
         type:String,
-        require:true,
+        // require:true,
     },
-    Name: {
+    name: {
         type:String,
-        require:true,
+        // require:true,
     },
-    Shopregistrationnumber: {
+    shopregistrationnumber: {
         type:String,
-        require:true,
+        // require:true,
     },
-    Shopplace: {
+    shopplace: {
         type:String,
-        require:true,
+        // require:true,
     },
-    Coursecertificates: {
+    coursecertificates: {
         type:String,
-        require:true,
+        // require:true,
     },
   
 })
-const Model = Mongoose.model('beautician',schema);
-module.exports = Model;
+const Beautician = Mongoose.model('Beautician',schema);
+module.exports = Beautician;

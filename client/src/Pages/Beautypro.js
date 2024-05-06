@@ -41,7 +41,7 @@ function Beautypro() {
           <th>Saturday 04/05</th>
           <th>Sunday 05/05</th>
         </tr>
-      </thead>
+      </thead><br/>
       <tbody>
         <tr>
           <td>8.00 a.m</td>
@@ -52,7 +52,7 @@ function Beautypro() {
           <td><button style={{backgroundColor:'green'}}>Available</button></td>
           <td><button style={{backgroundColor:'red'}}>Not Available</button></td>
           <td><button style={{backgroundColor:'green'}}>Available</button></td>
-        </tr>
+        </tr><br/>
         <tr>
           <td>9.00 a.m</td>
           <td><button style={{backgroundColor:'red'}}>Not Available</button></td>
@@ -62,7 +62,7 @@ function Beautypro() {
           <td><button style={{backgroundColor:'green'}}>Available</button></td>
           <td><button style={{backgroundColor:'green'}}>Available</button></td>
           <td><button style={{backgroundColor:'green'}}>Available</button></td>
-        </tr>
+        </tr><br/>
         <tr>
           <td>10.00 a.m</td>
           <td><button style={{backgroundColor:'green'}}>Available</button></td>
@@ -72,7 +72,7 @@ function Beautypro() {
           <td><button style={{backgroundColor:'red'}}>Not Available</button></td>
           <td><button style={{backgroundColor:'green'}}>Available</button></td>
           <td><button style={{backgroundColor:'red'}}>Not Available</button></td>
-        </tr>
+        </tr><br/>
         <tr>
           <td>11.00 a.m</td>
           <td><button style={{backgroundColor:'green'}}>Available</button></td>
@@ -82,7 +82,7 @@ function Beautypro() {
           <td><button style={{backgroundColor:'red'}}>Not Available</button></td>
           <td><button style={{backgroundColor:'red'}}>Not Available</button></td>
           <td><button style={{backgroundColor:'red'}}>Not Available</button></td>
-        </tr>
+        </tr><br/>
         <tr>
           <td>12.00 p.m</td>
           <td><button style={{backgroundColor:'red'}}>Not Available</button></td>
@@ -92,7 +92,7 @@ function Beautypro() {
           <td><button style={{backgroundColor:'red'}}>Not Available</button></td>
           <td><button style={{backgroundColor:'green'}}>Available</button></td>
           <td><button style={{backgroundColor:'green'}}>Available</button></td>
-        </tr>
+        </tr><br/>
         <tr>
           <td>1.00 p.m</td>
           <td><button style={{backgroundColor:'green'}}>Available</button></td>
@@ -102,7 +102,7 @@ function Beautypro() {
           <td><button style={{backgroundColor:'green'}}>Available</button></td>
           <td><button style={{backgroundColor:'red'}}>Not Available</button></td>
           <td><button style={{backgroundColor:'green'}}>Available</button></td>
-        </tr>
+        </tr><br/>
         <tr>
           <td>2.00 p.m</td>
           <td><button style={{backgroundColor:'red'}}>Not Available</button></td>
@@ -112,7 +112,7 @@ function Beautypro() {
           <td><button style={{backgroundColor:'green'}}>Available</button></td>
           <td><button style={{backgroundColor:'red'}}>Not Available</button></td>
           <td><button style={{backgroundColor:'green'}}>Available</button></td>
-        </tr>
+        </tr><br/>
         <tr>
           <td>3.00 p.m</td>
           <td><button style={{backgroundColor:'green'}}>Available</button></td>
@@ -122,7 +122,7 @@ function Beautypro() {
           <td><button style={{backgroundColor:'green'}}>Available</button></td>
           <td><button style={{backgroundColor:'green'}}>Available</button></td>
           <td><button style={{backgroundColor:'red'}}>Not Available</button></td>
-        </tr>
+        </tr><br/>
         <tr>
           <td>4.00 p.m</td>
           <td><button style={{backgroundColor:'red'}}>Not Available</button></td>
@@ -132,7 +132,7 @@ function Beautypro() {
           <td><button style={{backgroundColor:'red'}}>Not Available</button></td>
           <td><button style={{backgroundColor:'red'}}>Not Available</button></td>
           <td><button style={{backgroundColor:'red'}}>Not Available</button></td>
-        </tr>
+        </tr><br/>
         <tr>
           <td>5.00 p.m</td>
           <td><button style={{backgroundColor:'green'}}>Available</button></td>
@@ -142,7 +142,7 @@ function Beautypro() {
           <td><button style={{backgroundColor:'red'}}>Not Available</button></td>
           <td><button style={{backgroundColor:'green'}}>Available</button></td>
           <td><button style={{backgroundColor:'green'}}>Available</button></td>
-        </tr>
+        </tr><br/>
         <tr>
           <td>6.00 p.m</td>
           <td><button style={{backgroundColor:'green'}}>Available</button></td>

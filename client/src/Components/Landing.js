@@ -17,7 +17,7 @@ function Navbar1() {
                 <div className='container23' >
                     <h1  style={{textAlign:'left',fontSize:'100px',marginLeft:'60px'}} className='text1'>Welcome to the <br/>Beauty World!</h1><br />
                     <h3 style={{textAlign:'left',fontSize:'40px',marginLeft:'60px'}} className='text2'>Join with us to make your special occasions are <br />memorable and beautiful.</h3><br /><br />
-                    <div className='btn2'>
+                    <div>
                         <a href='/login'><button>Login</button></a>
                     </div>
                 </div><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>

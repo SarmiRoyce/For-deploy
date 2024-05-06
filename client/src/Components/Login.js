@@ -20,7 +20,7 @@ export default function Login() {
       <label>Password</label><br/>
       <input type='Password' placeholder='Enter your password'></input><br/><br/>
 
-      <button className='btn15'>Login</button><br/><br/>
+      <button className='btn'>Login</button><br/><br/>
 
       <p style={{fontSize:'15px',textAlign:'center'}}>Don't have an account? <a href="/role" style={{textDecoration:'none',color:'rgb(221, 23, 89'}}>Register Here</a></p><br/>
 

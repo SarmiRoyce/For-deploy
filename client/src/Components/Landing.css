@@ -19,13 +19,14 @@
     font-size: 55px;
 }
 .container23 button{
-    font-size: 25px;
+    font-size: 28px;
     font-weight: 700;
     background-color: rgb(245, 131, 150);
-    margin-left: 300px;
+    color: white;
+    margin-left: 350px;
     border-radius: 20px;
-    width: 120px;
-    height: 55px;
+    width: 150px;
+    height: 58px;
 }
 /* .container23 button:hover {
     background-color: violet;
@@ -57,3 +58,4 @@ ul {
 .text2{
     color: white;
 }
+
