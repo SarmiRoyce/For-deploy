@@ -3,6 +3,10 @@ require('dotenv').config();
 const mongodburl = process.env.mongodburl
 const userRoutes = require('../Routes/UserRoutes');
 const beauticianRoutes = require('../Routes/BeauticianRoutes');
+const beauticianprofileRoutes = require('../Routes/BeauticianprofileRoutes');
+const bookingRoutes = require('../Routes/BookingRoutes');
+const ratingRoutes = require('../Routes/RatingRoutes');
+
 const express = require('express');
 const bodyParser = require('body-parser');
 const app = express()
@@ -12,6 +16,9 @@ app.use(bodyParser.json())
 
 app.use('/beautician', beauticianRoutes)
 app.use('/user',userRoutes)
+app.use('/rating',ratingRoutes)
+app.use('/beauticianprofile',beauticianprofileRoutes)
+app.use('/booking',bookingRoutes)
 const PORT = 3001
 
 

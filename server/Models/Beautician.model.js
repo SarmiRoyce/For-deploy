@@ -15,6 +15,7 @@ const schema = new Mongoose.Schema ({
     },
     shopregistrationnumber: {
         type:String,
+        unique:true,
         require:true,
     },
     shopplace: {

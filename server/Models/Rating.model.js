@@ -1,13 +1,17 @@
 const Mongoose = require ("mongoose");
 const schema = new Mongoose.Schema({
     id:{
-        type:String
+        type:String,
+        unique:true,
+        require:true,
     },
     name:{
-        type:String
+        type:String,
+        require:true,
     },
-    rating:{
-        type:String
+    starrating:{
+        type:String,
+        require:true,
     }
 })
 

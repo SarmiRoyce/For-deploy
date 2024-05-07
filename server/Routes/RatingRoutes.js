@@ -1,9 +1,11 @@
 const express = require('express');
 const router = express.Router();
-const ratingController = require('../Controllers/RatingController');
-// router.get('/', ratingController.getRating);
-router.post('/', ratingController.createRating);
-// router.put('/update/:id', ratingController.updateRating);
-// router.delete('/delete/:id', ratingController.deleteRating);
+const userController = require('../Controllers/RatingController');
+router.get('/view', userController.getUser);
+router.post('/create', userController.createUser);
+router.get('/view/:id', userController.getUserid);
+router.put('/update/:id', userController.updateUserid);
+router.delete('/delete/:id', userController.deleteUser);
 
 module.exports = router;
+

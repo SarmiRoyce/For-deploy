@@ -1,13 +1,16 @@
 const Mongoose = require ("mongoose");
 const schema = new Mongoose.Schema({
     experience:{
-        type:String
+        type:String,
+        require:true,
     },
     name:{
-        type:String
+        type:String,
+        require:true,
     },
     service:{
-        type:String
+        type:String,
+        require:true,
     }
 })
 

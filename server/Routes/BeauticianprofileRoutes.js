@@ -1,9 +1,11 @@
 const express = require('express');
 const router = express.Router();
-const beauticianprofileController = require('../Controllers/BeauticianprofileController');
-// router.get('/', beauticianprofileController.getBeauticianprofile);
-router.post('/', beauticianprofileController.createBeauticianprofile);
-// router.put('/update/:id', beauticianprofileController.updateBeauticianprofile);
-// router.delete('/delete/:id', beauticianprofileController.deleteBeauticianprofile);
+const userController = require('../Controllers/BeauticianprofileController');
+router.get('/view', userController.getUser);
+router.post('/create', userController.createUser);
+router.get('/view/:id', userController.getUserid);
+router.put('/update/:id', userController.updateUserid);
+router.delete('/delete/:id', userController.deleteUser);
 
 module.exports = router;
+

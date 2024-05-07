@@ -1,19 +1,24 @@
 const Mongoose = require ("mongoose");
 const schema = new Mongoose.Schema({
     beauticianname:{
-        type:String
+        type:String,
+        require:true,
     },
     customername:{
-        type:String
+        type:String,
+        require:true,
     },
     package:{
-        type:String
+        type:String,
+        require:true,
     },
     date:{
-        type:String
+        type:String,
+        require:true,
     },
     time:{
-        type:String
+        type:String,
+        require:true,
     }
 })
 
