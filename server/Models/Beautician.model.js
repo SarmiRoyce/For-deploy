@@ -2,24 +2,24 @@ const Mongoose = require ("mongoose");
 const schema = new Mongoose.Schema ({
     email: {
         type:String,
-        // require:true,
-        // unique:true,
+        require:true,
+        unique:true,
     },
     password: {
         type:String,
-        // require:true,
+        require:true,
     },
     name: {
         type:String,
-        // require:true,
+        require:true,
     },
     shopregistrationnumber: {
         type:String,
-        // require:true,
+        require:true,
     },
     shopplace: {
         type:String,
-        // require:true,
+        require:true,
     },
     coursecertificates: {
         type:String,
@@ -27,5 +27,6 @@ const schema = new Mongoose.Schema ({
     },
   
 })
+
 const Beautician = Mongoose.model('Beautician',schema);
 module.exports = Beautician;

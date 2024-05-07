@@ -1,5 +1,3 @@
-// const express = require('express');
-// const mongoose = require('mongoose');
 const User = require('../Models/User.model');
 // cors = require('cors');
 // const app = express();
@@ -9,19 +7,20 @@ const User = require('../Models/User.model');
 
 
 
-// exports.getUser = (req, res) => {
-//     User.find({})
-//         .then(users => {
-//             res.status(200).json(users);
-//         })
-//         .catch(err => {
-//             res.status(500).json({ message: 'Something went wrong' });
-//         });
-// };
+// Create
+exports.getUser = (req, res) => {
+   const user = User.find()
+        .then(users => {
+            res.status(200).json(users);
+        })
+        .catch(err => {
+            res.status(500).json({ message: 'Something went wrong' });
+        });
+};
 
-exports.createUser = async (req, res) => {
-    const user = new User(req.body);   
-    // const user = new User (req.body) 
+// Post
+exports.createUser = async (req, res) => { 
+    const user = new User (req.body) 
     user.save()
     .then(() => {
         res.status(201).send(user);
@@ -32,49 +31,42 @@ exports.createUser = async (req, res) => {
 };
 
 
-// const updateUser = (req, res) => {
-//     const id = req.params.id;
-//     const { name, email, password } = req.body
-// };
-
-// const deleteUser = (req, res) => {
-//     const id = req.params.id;
-//     User.findByIdAndRemove(id, (err, user) => {
-//         if (err) {
-//             res.status(500).json({ message: 'Something went wrong' });
-//         } else if (!user) {
-//             res.status(404).json({ message: 'User not found' });
-//         } else {
-//             res.status(200).json(user);
-//         }
-//     });
-// };
-
-// const loginUser = (req, res) => {
-//     const {userName} = req.params
-//     console.log(userName)
-//     res.status(200).json({message:"ok"});
-// }
-
-// module.exports = {getUser, createUser};
-
-// const express = require('express');
-// const connectDB = require('./DB/connect');
-// const userRoutes = require('./Routes/userRoutes');
+exports.getUserid = async (req, res) => {
+    try {
+        const user = await User.findById(req.params.id);
+        res.status(200).json(user);
+    }
+    catch (error) {
+        res.status(400).send(error);
+    }
+};
 
 
-// const startServer = async () => {
-//     try{
-//         await connectDB();        
-//         app.listen(PORT, ()=>{
-//             console.log(`Server is running on the port ${PORT}`)
-//         })  
+// Update
+exports.updateUserid = async (req, res) => {
+    try {
+      const {id} = req.params
+      await User.findByIdAndUpdate(id, req.body);
+      const user = await User.findById(id);
+      res.status(200).json(user);
+    } catch (error) {
+      res.status(400).send(error);
+    }
+};
 
-//         app.use(express.json());
-//         app.use('/user', userRoutes)
-//     }
-//     catch(err){
-//         console.log(err)
-//     }
-// }
-// startServer();
+
+// Delete
+exports.deleteUser = async (req, res) => {
+    const id = req.params.id;
+    try {
+        const user = await User.findOneAndDelete({ _id: id });
+        if (!user) {
+            return res.status(404).json({ message: 'User not found' });
+        }
+        res.status(200).json({ message: 'User deleted successfully' });
+    } catch (err) {
+        res.status(500).json({ message: 'Something went wrong' });
+    }
+};
+
+

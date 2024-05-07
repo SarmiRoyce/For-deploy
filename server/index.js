@@ -1,3 +1,10 @@
+const express = require('express')
+const bodyParser = require('body-parser');
+const app = express()
+express.json() 
+app.use(bodyParser.json())
+
+
 const connectDb = require("../server/DB/Connect")
 connectDb()
 
