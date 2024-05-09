@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useState} from 'react';
 import image from '../Components/Gorgeous Queen.png';
 
 export default function Register() {
