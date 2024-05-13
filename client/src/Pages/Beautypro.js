@@ -7,8 +7,9 @@ import '../Pages/Beautypro.css'
 function Beautypro() {
   return (
     <div className='beauty'>
+      <Navbar/>
       <div className='container2'>
-        <h1>Beautician's Profile</h1>
+        <h1 style={{marginTop:'20px'}}>Beautician's Profile</h1>
         <div>
         <div className='img1'>
           <img src="https://res.cloudinary.com/purnesh/image/upload/w_540,f_auto/make-up-header.jpg" class="card-img-top" alt="..."/>

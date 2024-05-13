@@ -6,7 +6,7 @@ import '../Pages/Book.css'
 function Book() {
   return (
     <div>
-        {/* <Navbar/> */}
+        <Navbar/>
         <div className='book-full'>
     
           <form className='Book' >
@@ -29,7 +29,7 @@ function Book() {
               <input type='Time' placeholder='Enter your time' ></input><br/><br/>
               
 
-              <a href='/Book'><button className='btn6'>Confirm</button><br/><br/></a>
+              <a href='/Payment'><button className='btn6'>Confirm</button><br/><br/></a>
               
               </div>
             </form>

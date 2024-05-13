@@ -1,7 +1,44 @@
-import React from 'react'
+import React, {useState} from 'react';
 import image from '../Components/Gorgeous Queen.png';
 
-export default function UserRegister() {
+
+function SignUpPage() {
+    const [firstname, setFirstName] = useState('');
+    const [lastname, setLastName] = useState('');
+    const [email, setEmail] = useState('');
+    const [password, setPassword] = useState('');
+    const [retypepassword, setRetypePassword] = useState('');
+  
+    const handleSubmit = (event) => {
+      event.preventDefault();
+      if (password !== retypepassword) {
+        alert("Passwords do not match.");
+        return;
+      }
+      const userData = {
+        firstname,
+        lastname,
+        email,
+        password,
+        retypepassword
+      };
+      console.log(userData);
+  
+      fetch('http://localhost:3001/user/create', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(userData),
+    })
+      .then(res => res.json ())
+      .then(data => console.log(data))
+      .catch((error) => {
+        console.log('Error:', error);
+      });
+  };
+
+// export default function UserRegister() {
   return (
 
     <div className='login-full' >
@@ -12,6 +49,29 @@ export default function UserRegister() {
         </div>
 
         <div className='login-text'>
+          <img class="img3" src={image} style={{marginLeft:'80px'}}/><br/><br/>
+           <h1 style={{marginLeft:'50px'}}>User Register</h1><br/>
+           <label>First Name</label><br/>
+           <input type='text' id='firstName' placeholder='Enter your first name' value={firstname} onChange={(e) => setFirstName(e.target.value)} required /><br/><br/>
+
+           <label>Last Name</label><br/>
+           <input type='text' id='lastName' placeholder='Enter your last name' value={lastname} onChange={(e) => setLastName(e.target.value)} required /><br/><br/>
+
+           <label>Email Address</label><br/>
+           <input type='Email' id='email' placeholder='Enter your email' value={email} onChange={(e) => setEmail(e.target.value)} required /><br/><br/>
+
+           <label>Password</label><br/>
+           <input type='Password' id='password' placeholder='Enter your password' value={password} onChange={(e) => setPassword(e.target.value)} required /><br/><br/>
+
+           <label>Retype Password</label><br/>
+           <input type='Password' id='retypePassword' placeholder='Confirm your password' value={retypepassword} onChange={(e) => setRetypePassword(e.target.value)} required /><br/><br/>
+
+
+           <button className='btn15'>Submit</button><br/>
+
+         </div>
+
+        {/* <div className='login-text'>
           <img class="img3" src={image} style={{marginLeft:'80px'}}/><br/><br/>
           <h1 style={{marginLeft:'50px'}}>User Register</h1><br/>
           <label>First Name</label><br/>
@@ -32,11 +92,13 @@ export default function UserRegister() {
 
           <button className='btn15'>Submit</button><br/>
 
-        </div>
+        </div> */}
       </form>
     </div>
 
 
   )
 }
+
+export default SignUpPage;
     

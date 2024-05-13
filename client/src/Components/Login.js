@@ -1,9 +1,12 @@
 import React from 'react'
 import image from '../Components/Gorgeous Queen.png';
+import Navbar from '../Components/nav';
 import './Login.css'
 
 export default function Login() {
   return (
+    <div>
+        <Navbar/>
     <div className='login-full'>
     
   <form className='Login' style={{display:'flex',justifyContent:'space-evenly'}}>
@@ -26,6 +29,7 @@ export default function Login() {
 
     </div>
   </form>
+  </div>
   </div>
 
 

@@ -3,7 +3,7 @@ import { Route,Routes } from 'react-router-dom';
 
 import Landing from './Components/Landing'
 import Login from './Components/Login'
-import About from './Pages/About'
+import Payment from './Pages/Payment'
 import Services from './Pages/Packages'
 import Contact from './Pages/Contact Us'
 import BR from './Components/Beauty Register'
@@ -25,7 +25,7 @@ function App() {
       <Routes>
         <Route path='/' element ={<Landing/>}/>
         <Route path='/login' element ={<Login/>}/>
-        <Route path='/About' element ={<About/>}/>
+        <Route path='/Payment' element ={<Payment/>}/>
         <Route path='/packages' element ={<Services/>}/>
         <Route path='/Contact' element ={<Contact/>}/>
         <Route path='/Register' element ={<BR/>}/>
