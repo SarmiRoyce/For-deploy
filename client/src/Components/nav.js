@@ -9,14 +9,14 @@ function nav() {
         <div>
             <header>
                 <nav class="navbar navbar-expand-lg bg-body-tertiary">
-                    <div class="container-fluid">
-                        <div class="align1"><img class="img3" src={image} style={{height:'80px'}}/></div>
+                    <div class="container-fluid" style={{height:'90px',textAlign:'center'}}>
+                        <div class="align1"><img class="img3" src={image} style={{height:'80px',marginBottom:'10px'}}/></div>
                         {/* <a class="navbar-brand" href="#">Gorgeous Queen</a> */}
-                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                        {/* <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                             <span class="navbar-toggler-icon"></span>
-                        </button>
+                        </button> */}
                         <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
-                            <ul class="navbar-nav" style={{fontSize:'25px'}}>
+                            <ul class="navbar-nav" style={{fontSize:'25px',marginBottom:'50px'}}>
                                 <li class="nav-item" >
                                     <a class="nav-link " aria-current="page" href="/">Home </a>
                                 </li>&nbsp;&nbsp;&nbsp;

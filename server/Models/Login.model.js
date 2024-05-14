@@ -2,6 +2,7 @@
 // const express = require ('express');
 // const jwt = require ('jsonwebtoken');
 // const app = express();
+// const User=require('./User.model')
 // app.use(express.json());
 
 
@@ -34,7 +35,7 @@
 //     }
 // });
 
-// const PORT = 3000;
+// const PORT = 3002;
 // app.listen(PORT, () => console.log('Server running on port ${PORT}'));
 
 

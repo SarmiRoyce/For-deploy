@@ -8,13 +8,6 @@ function Admin() {
 
     <h1>Dashboard</h1>
 
-    {/* <nav>
-        <ul>
-            <li><a href='/'>Dashboard</a></li>
-            <li><a href='/'>Users</a></li>
-            <li><a href='/'>Settings</a></li>
-        </ul>
-    </nav> */}
     <div className='sidebar'>
         <ul>
             <li><a href='/dashboard'>Dashboard</a></li>
@@ -139,8 +132,8 @@ export default Admin
 {/* <div className='dashboard'>
         <h2>Dashboard</h2>
     <p>Welcome to the admin panel.</p>
-    </div> */}
-
+    // </div> */}
+// 
     {/* //     <div className='users'>
     //         <h2>User Management</h2>
     //         <p>Manage your users here.</p>

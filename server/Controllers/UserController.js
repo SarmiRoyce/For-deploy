@@ -16,6 +16,7 @@ exports.getUser = (req, res) => {
 // Post
 exports.createUser = async (req, res) => { 
     const user = new User (req.body) 
+    
     user.save()
     .then(() => {
         res.status(201).send(user);

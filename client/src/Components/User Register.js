@@ -1,5 +1,6 @@
 import React, {useState} from 'react';
 import image from '../Components/Gorgeous Queen.png';
+import Navbar from './nav'
 
 
 function SignUpPage() {
@@ -24,7 +25,7 @@ function SignUpPage() {
       };
       console.log(userData);
   
-      fetch('http://localhost:3001/user/create', {
+      fetch('http://localhost:3002/user/create', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -40,17 +41,19 @@ function SignUpPage() {
 
 // export default function UserRegister() {
   return (
+    <div>
+      <Navbar/>
 
     <div className='login-full' >
     
-      <form className='Login' style={{display:'flex',justifyContent:'space-evenly',width:'1200px'}}>
+      <form onSubmit={handleSubmit}className='Login' style={{display:'flex',justifyContent:'space-evenly',width:'950px'}}>
         <div>
-          <img src="https://content.jdmagicbox.com/comp/bidar/m2/9999p8482.8482.180626152315.d4m2/catalogue/apsara-beauty-parlour-hallikhed-bidar-bidar-beauty-parlours-y43tudewu1.jpg" alt='bridal' style={{height:'780px'}}/>
+          <img src="https://content.jdmagicbox.com/comp/bidar/m2/9999p8482.8482.180626152315.d4m2/catalogue/apsara-beauty-parlour-hallikhed-bidar-bidar-beauty-parlours-y43tudewu1.jpg" alt='bridal' style={{height:'700px'}}/>
         </div>
 
-        <div className='login-text'>
-          <img class="img3" src={image} style={{marginLeft:'80px'}}/><br/><br/>
-           <h1 style={{marginLeft:'50px'}}>User Register</h1><br/>
+        <div className='login-text'style={{marginLeft:'40px'}}>
+          {/* <img class="img3" src={image} style={{marginLeft:'80px',height:'100px'}}/><br/><br/> */}
+           <h1 style={{marginLeft:'40px'}}>User Register</h1><br/>
            <label>First Name</label><br/>
            <input type='text' id='firstName' placeholder='Enter your first name' value={firstname} onChange={(e) => setFirstName(e.target.value)} required /><br/><br/>
 
@@ -70,8 +73,20 @@ function SignUpPage() {
            <button className='btn15'>Submit</button><br/>
 
          </div>
+      </form>
+    </div>
+    </div>
 
-        {/* <div className='login-text'>
+
+  )
+}
+
+export default SignUpPage;
+
+
+
+
+{/* <div className='login-text'>
           <img class="img3" src={image} style={{marginLeft:'80px'}}/><br/><br/>
           <h1 style={{marginLeft:'50px'}}>User Register</h1><br/>
           <label>First Name</label><br/>
@@ -93,12 +108,4 @@ function SignUpPage() {
           <button className='btn15'>Submit</button><br/>
 
         </div> */}
-      </form>
-    </div>
-
-
-  )
-}
-
-export default SignUpPage;
     

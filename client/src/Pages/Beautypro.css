@@ -21,16 +21,21 @@
     display: flex;
     justify-content: space-evenly;
 }
-.beauty h2 {
-    color: rgb(230, 128, 145);
+.beauty h1 {
+    color: rgb(255, 98, 165);
     font-weight: 800;
 }
+.beauty h2 {
+    color: rgb(255, 98, 165);
+    font-weight: 800;
+    /* color: rgb(230, 128, 145); */
+}
 .profile-details {
-    color: rgb(230, 128, 145);
+    color: rgb(255, 98, 165);
     margin-left: 250px;
 }
 .beauty-table {
-    color: rgb(230, 128, 145);
+    color: rgb(255, 98, 165);
     font-size: 18px;
     margin-left: 230px;
 }
@@ -42,7 +47,5 @@ table tr td button {
     color: white;
     font-weight: bold;
 }
-/* .Profile5 {
-    margin-left: 80px;
-} */
+
 

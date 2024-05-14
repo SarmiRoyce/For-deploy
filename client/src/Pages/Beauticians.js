@@ -9,7 +9,7 @@ function Beautician(){
     <div className='beauty'>
         <Navbar/>
             <h1 style={{marginTop:'30px'}}>Beautician Team</h1>
-            <div class="card1" style={{display:'flex',justifyContent:'space-evenly',marginTop:'80px'}}>
+            <div class="card1" style={{display:'flex',justifyContent:'space-evenly',marginTop:'50px'}}>
                 <div>
                   <div class="card" style={{width: '18rem'}}>
                     <img src="https://img.freepik.com/premium-photo/beautician-with-female-client-parlor-gorgeous-bridal-makeup_94574-2254.jpg" class="card-img-top" alt="..." style={{padding:'10px',width:'285px',height:'220px'}}/>
@@ -37,7 +37,6 @@ function Beautician(){
                   </div><br></br>
                   <div class="card" style={{width: '18rem'}}>
                     <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTxQs3n0cXA3mFaVBC4OAxYO6a3xG_I_qR3ZRgnd6XMINJiJwZW4zsrMZQTuYYtG5dVKkw&usqp=CAU" class="card-img-top" alt="..." style={{padding:'10px',width:'285px',height:'220px'}}/>
-                    {/* <img src="https://cdn0.weddingwire.in/vendor/3364/3_2/960/jpg/makeupartist-kanak-beauty-salon-bridalmakeup-3_15_413364-165575199581414.webp" class="card-img-top" alt="..." style={{padding:'10px',width:'285px',height:'220px'}}/> */}
                     <div class="card-body">
                       <h5 class="card-title">Anne</h5>
                       <span class="fa fa-star checked" style={{color:'yellow'}}/>
@@ -161,7 +160,7 @@ function Beautician(){
                       </div>
                     </div>
                     </div>
-                </div><br></br>
+                </div>
                 <Footer/>
     </div>
     

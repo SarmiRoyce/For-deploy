@@ -7,6 +7,7 @@ function Payment(){
     return (
     <div>
         <Navbar/>
+        {/* <div className='pay'> */}
         <div className='payment-full'>
             <form className='Payment' >
 
@@ -35,9 +36,15 @@ function Payment(){
               <button className='btn14'>Continue to payment</button><br/><br/>
               
               </div>
+              {/* <div>
+                <h3>Payment Method</h3>
+                <img src="https://logowik.com/content/uploads/images/219_visa.jpg" alt='visa card' style={{width:'150px'}}/>
+                <img src="https://imgk.timesnownews.com/story/1569653930-Credit_Card.jpg" alt='credit card' style={{width:'150px'}}/>
+              </div> */}
             </form>
         </div>
-    </div>
+        </div>
+    // </div>
     )
 }
 

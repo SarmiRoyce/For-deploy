@@ -13,7 +13,7 @@ const schema = new Mongoose.Schema ({
         type:String,
         require:true,
     },
-    shopregistrationnumber: {
+    shopregisternumber: {
         type:String,
         unique:true,
         require:true,
@@ -24,7 +24,7 @@ const schema = new Mongoose.Schema ({
     },
     coursecertificates: {
         type:String,
-        // require:true,
+        require:true,
     },
   
 })

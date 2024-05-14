@@ -42,7 +42,7 @@ function Profile() {
     <h2 style={{fontWeight:'600'}}>Works</h2><br/>
     <div class="row">
         <div class="col-md-4">
-            <img src="https://i.ytimg.com/vi/IHn--eG--ZM/maxresdefault.jpg" alt="Hair Styling"/>
+        <img src="https://i.ytimg.com/vi/IHn--eG--ZM/maxresdefault.jpg" alt="Hair Styling"/>
             <p style={{fontSize:'22px',marginTop:'10px'}}>Wedding hair styling</p>
         </div>
         <div class="col-md-4">

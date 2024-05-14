@@ -1,12 +1,15 @@
 import React, {useState} from 'react';
 import image from '../Components/Gorgeous Queen.png';
+import Navbar from './nav'
 
 function SignUpPage() {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
-  const [shopplace, setShopPlace] = useState('');
+  const [name, setName] = useState('');
   const [shopregisternumber, setRegisterNumber] = useState('');
+  const [shopplace, setShopPlace] = useState('');
   const [courseCertificates, setCourseCertificates] = useState('');
+ 
 
   const handleSubmit = (event) => {
     event.preventDefault();
@@ -14,13 +17,14 @@ function SignUpPage() {
     const userData = {
       email,
       password,
-      shopplace,
+      name,
       shopregisternumber,
+      shopplace,
       courseCertificates
     };
     console.log(userData);
 
-    fetch('http://localhost:3001/beautician/create', {
+    fetch('http://localhost:3002/beautician/create', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
@@ -36,19 +40,21 @@ function SignUpPage() {
 
 // export default function Register() {
   return (
+    <div>
+        <Navbar/>
 
     <div className='login-full'>
     
-      <form className='Login' onSubmit={handleSubmit}>
+      <form className='Login' onSubmit={handleSubmit} style={{marginTop:'25px'}}>
 
         <div>
-          <img src="https://images.pexels.com/photos/11742213/pexels-photo-11742213.jpeg?cs=srgb&dl=pexels-imadclicks-11742213.jpg&fm=jpg" alt="Attractive fashion " style={{height:'780px',width:'420px'}}/>
+          <img src="https://images.pexels.com/photos/11742213/pexels-photo-11742213.jpeg?cs=srgb&dl=pexels-imadclicks-11742213.jpg&fm=jpg" alt="Attractive fashion " style={{height:'720px',width:'420px'}}/>
         </div>
-        <div className='login-text' style={{marginLeft:'70px'}}>
+        <div className='login-text' style={{marginLeft:'60px'}}>
 
         <div className='login-text'>
-          <img class="img3" src={image} style={{marginLeft:'80px'}}/><br/><br/>
-          <h1>Beautician Register</h1><br/>
+          {/* <img class="img3" src={image} style={{marginLeft:'80px',height:'100px'}}/><br/> */}
+          <h1 style={{marginLeft:'20px'}}>Beautician Register</h1><br/>
           <label>Email Address</label><br/>
           <input type='Email' id='email' placeholder='Enter your email' value={email} onChange={(e) => setEmail(e.target.value)} required />
           </div><br/>
@@ -56,8 +62,11 @@ function SignUpPage() {
           <label>Password</label><br/>
           <input type='Password' id='password' placeholder='Enter your password' value={password} onChange={(e) => setPassword(e.target.value)} required /><br/><br/>
 
-          <label>Shop Registration Number</label><br/>
-          <input type='text' id='shopregisternumber' placeholder='Enter your registration number' value={shopregisternumber} onChange={(e) => setRegisterNumber(e.target.value)} required /> <br/><br/>
+          <label>Name</label><br/>
+          <input type='text' id='name' placeholder='Enter your name' value={name} onChange={(e) => setName(e.target.value)} required /> <br/><br/>
+
+          <label>Shop Register Number</label><br/>
+          <input type='text' id='shopregisternumber' placeholder='Enter your register number' value={shopregisternumber} onChange={(e) => setRegisterNumber(e.target.value)} required /> <br/><br/>
 
           <label>Shop Place</label><br/>
           <input type='text' id='shopplace' placeholder='Enter your place' value={shopplace} onChange={(e) => setShopPlace(e.target.value)} required /> <br/><br/>
@@ -69,6 +78,7 @@ function SignUpPage() {
           </div>
         
       </form>
+    </div>
     </div>
 
 

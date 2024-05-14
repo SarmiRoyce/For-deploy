@@ -4,7 +4,7 @@ import image from '../Components/Gorgeous Queen.png';
 function Footer() {
   return (
     <div>
-        <footer class="bg-body-tertiary text-center text-lg-start">
+        <footer class="bg-body-tertiary text-center text-lg-start" style={{marginTop:'60px'}}>
   <div class="container p-4">
     <div class="row" style={{display:'flex',justifyContent:'space-between'}}>
       <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
@@ -21,7 +21,7 @@ function Footer() {
       <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
       <h5 class="text-uppercase">Quick Links</h5>
 
-        <ul class="list-unstyled">
+        <ul class="list-unstyled" style={{marginTop:'30px'}}>
           <li>
             <a href="/" class="text-body">Home</a>
           </li>
@@ -40,7 +40,7 @@ function Footer() {
       <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
         <h5 class="text-uppercase">Contact Us</h5>
 
-        <ul class="list-unstyled mb-0">
+        <ul class="list-unstyled mb-0" style={{marginTop:'30px'}}>
           <li>
             <a href="#!" class="text-body">E-mail: gorgeousqueen@gmail.com</a>
           </li>

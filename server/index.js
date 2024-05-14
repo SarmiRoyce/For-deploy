@@ -84,3 +84,66 @@ connectDb()
 
 
 // export default App;
+
+
+
+
+
+// BEAUTICIAN FETCHING
+// import React, { useState, useEffect } from 'react';
+// import Navbar from '../Components/nav';
+// import Footer from '../Components/Footer';
+// import './Beauticians.css';
+
+// function Beautician() {
+//   // State to store the fetched beautician data
+//   const [beauticians, setBeauticians] = useState([]);
+
+//   // Effect to fetch beautician data when the component mounts
+//   useEffect(() => {
+//     // Fetch data from your backend API endpoint
+//     fetch('http://localhost:5000/api/beauticians')
+//       .then(response => {
+//         if (!response.ok) {
+//           throw new Error('Network response was not ok');
+//         }
+//         return response.json();
+//       })
+//       .then(data => {
+//         // Set the fetched data to the state
+//         setBeauticians(data);
+//       })
+//       .catch(error => {
+//         // Handle error
+//         console.error('Error fetching beauticians:', error);
+//       });
+//   }, []); // Empty dependency array to run this effect only once on component mount
+
+//   return (
+//     <div className='beauty'>
+//       <Navbar />
+//       <h1 style={{ marginTop: '30px' }}>Beautician Team</h1>
+//       <div className="card-container">
+//         {beauticians.map(beautician => (
+//           <div className="card" key={beautician.id} style={{ width: '18rem' }}>
+//             <img src={beautician.imageUrl} className="card-img-top" alt="..." style={{ padding: '10px', width: '285px', height: '220px' }} />
+//             <div className="card-body">
+//               <h5 className="card-title">{beautician.name}</h5>
+//               {/* Displaying rating stars */}
+//               <div>
+//                 {[...Array(beautician.rating)].map((_, index) => (
+//                   <span key={index} className="fa fa-star checked" style={{ color: 'yellow' }} />
+//                 ))}
+//               </div>
+//               <br /><br />
+//               <a href="/Beauty"><button className='btn12'>View Profile</button></a>
+//             </div>
+//           </div>
+//         ))}
+//       </div>
+//       <Footer />
+//     </div>
+//   );
+// }
+
+// export default Beautician;

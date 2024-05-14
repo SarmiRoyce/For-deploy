@@ -10,6 +10,7 @@ export default function Contact() {
   return (
     <div>
         <Navbar/>
+
         <div className='contact-full'>
     
           <form className='Contact' >

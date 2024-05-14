@@ -1,6 +1,10 @@
 const Mongoose = require ("mongoose");
 const schema = new Mongoose.Schema({
-    name:{
+    firstname:{
+        type:String,
+        require:true,
+    },
+    lastname:{
         type:String,
         require:true,
     },
