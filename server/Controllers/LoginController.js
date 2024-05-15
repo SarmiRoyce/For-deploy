@@ -33,7 +33,8 @@ const AdminModel = require('../Models/Admin')
 const app = express();
 exports.LoginUser = (req, res) => {
   const { email, password } = req.body;  
-    userModel.findOne({ email }).then((user) => {
+    userModel.findOne({ email })
+    .then((user) => {
     if (user) {
       bcrypt.compare(password, user.password).then((isMatch) => {
         if (isMatch) {

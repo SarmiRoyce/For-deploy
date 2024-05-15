@@ -1,7 +1,5 @@
 const User = require('../Models/Beautician.model');
 
-
-
 // Create
 exports.getUser = (req, res) => {
    const user = User.find()
@@ -15,15 +13,27 @@ exports.getUser = (req, res) => {
 
 // Post
 exports.createUser = async (req, res) => { 
-    const user = new User (req.body) 
-    user.save()
-    .then(() => {
-        res.status(201).send(user);
-    })
-    .catch(err => {
-        res.status(500).send(err);
-    });
-};
+    // const user = new User (req.body) 
+    // user.save()
+    // .then(() => {
+    //     res.status(201).send(user);
+    // })
+    // .catch(err => {
+    //     res.status(500).send(err);
+    // });
+    try{
+    const { name, email, password ,shopregisternumber, shopplace, coursecertificates} = req.body;        
+        bcrypt
+        .hash(password, 10)
+        .then((hash) => {
+          User.create({ name, email,shopregisternumber, shopplace, coursecertificates, password: hash })
+            .then((user) => res.json(user))
+            .catch((err) => res.json(err));
+        })
+    } catch (error) {
+        res.status(400).send(error);
+    };
+}
 
 
 exports.getUserid = async (req, res) => {

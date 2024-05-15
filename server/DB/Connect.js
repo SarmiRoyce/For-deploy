@@ -7,7 +7,6 @@ const beauticianprofileRoutes = require('../Routes/BeauticianprofileRoutes');
 const bookingRoutes = require('../Routes/BookingRoutes');
 const ratingRoutes = require('../Routes/RatingRoutes');
 const LoginRoutes =require('../Routes/LoginRoutes')
-
 const express = require('express');
 const bodyParser = require('body-parser');
 const cors = require ('cors')
@@ -29,7 +28,7 @@ app.use('/rating',ratingRoutes)
 app.use('/beauticianprofile',beauticianprofileRoutes)
 app.use('/booking',bookingRoutes)
 app.use('/user',LoginRoutes)
-const PORT = 3002
+const PORT = 3002;
 
 
 
@@ -50,4 +49,4 @@ function connectDb() {
 
 }
 
-module.exports = connectDb
+module.exports = connectDb;

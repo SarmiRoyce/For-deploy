@@ -1,5 +1,6 @@
 import React from 'react';
 import image from '../Components/Gorgeous Queen.png';
+import "./nav.css";
 // import image from '../FINDER_2.png'
 
 
@@ -32,8 +33,13 @@ function nav() {
                                 <li class="nav-item">
                                     <a class="nav-link " aria-current="page" href="/Contact">Contact Us</a>
                                 </li>&nbsp;&nbsp;&nbsp;
-
+                                {/* <li class="nav-item">
+                                    <a class="nav-link " aria-current="page" href='/login'><button>Login</button></a>
+                                </li>&nbsp;&nbsp;&nbsp; */}
                             </ul>
+                            {/* <div className='container23' >
+                                <a href='/login'><button>Login</button></a>
+                            </div> */}
                         </div>
                     </div>
                 </nav>

@@ -9,20 +9,22 @@ import { useState } from "react";
 export default function Login() {
     const [email, setEmail] = useState();
     const [password, setPassword] = useState();
-    const navigate = useNavigate();  axios.defaults.withCredentials = true;
+    const navigate = useNavigate();   
     
     const handleSubmit = (e) => {
       e.preventDefault();
       const userdata = { email, password };
       console.log(userdata);
       
-      fetch("http://localhost:3002/user/login",{
+      fetch("http://localhost:3002/user/login", {
         method: 'POST',
-        headers:{
-          'Content-Type': 'application/json'
-        }
-      } , userdata)
-        .then((userdata) => {
+        headers: {
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(userdata) 
+    })
+    
+        .then(userdata => {
           console.log(userdata.data);
           if (userdata.data === "Success") {
             navigate("/");
