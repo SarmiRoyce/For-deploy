@@ -1,4 +1,6 @@
 const User = require('../Models/Beautician.model');
+const bcrypt = require('bcrypt')
+
 
 // Create
 exports.getUser = (req, res) => {
@@ -21,18 +23,33 @@ exports.createUser = async (req, res) => {
     // .catch(err => {
     //     res.status(500).send(err);
     // });
-    try{
-    const { name, email, password ,shopregisternumber, shopplace, coursecertificates} = req.body;        
-        bcrypt
-        .hash(password, 10)
-        .then((hash) => {
-          User.create({ name, email,shopregisternumber, shopplace, coursecertificates, password: hash })
-            .then((user) => res.json(user))
-            .catch((err) => res.json(err));
-        })
+    try {
+        const { firstname, lastname, email, password } = req.body;
+        
+        // Check if the email already exists
+        const existingUser = await User.findOne({ email });
+        if (existingUser) {
+            return res.status(400).json({ message: "Email already exists" });
+        }
+
+        // Hash the password
+        const hashedPassword = await bcrypt.hash(password, 10);
+
+        // Create a new user instance
+        const newUser = new User({
+            firstname,
+            lastname,
+            email,
+            password: hashedPassword
+        });
+
+        // Save the user to the database
+        const savedUser = await newUser.save();
+        res.status(201).json(savedUser);
     } catch (error) {
-        res.status(400).send(error);
-    };
+        console.error("Error creating user:", error);
+        res.status(500).json({ message: "Internal server error" });
+    }
 }
 
 

@@ -1,0 +1,70 @@
+/* AddProfile.css */
+
+.add-profile {
+    max-width: 500px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #f4f4f4;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .add-profile h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 30px;
+    color: #333;
+  }
+  
+  .add-profile form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .add-profile input[type="text"],
+  .add-profile select {
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    width: 420px;
+  }
+
+  .add-profile select[multiple] {
+    height: auto;
+  }
+  
+  .add-profile label {
+    margin-bottom: 10px;
+    font-size: 18px;
+    color: #333;
+  }
+  
+  /* .add-profile input[type="text"] {
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+    width: 420px;
+  } */
+  
+  .add-profile button[type="submit"] {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    background-color: rgb(221, 23, 89); 
+    color: white;
+    font-size: 20px;
+    font-weight: bolder;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .add-profile button[type="submit"]:hover {
+    background-color: #218838;
+  }
+  

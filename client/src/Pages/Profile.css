@@ -23,6 +23,11 @@
     text-align: center;
 }
 
+.container label{
+    font-size: 20px;
+    display: flex;
+    /* justify-content: space-between; */
+}
 .btn {
     color: white;
     padding: 10px 35px; 
@@ -34,7 +39,7 @@
     margin-top: 20px;
     background-color: rgb(221, 23, 89); 
     transition: background-color 0.3s;
-  }
+}
 
 
 

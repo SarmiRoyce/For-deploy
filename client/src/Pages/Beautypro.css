@@ -21,6 +21,11 @@
     display: flex;
     justify-content: space-evenly;
 }
+.container6 p {
+    margin-left: 20px;
+    font-size: 20px;
+    color: black;
+}
 .beauty h1 {
     color: rgb(255, 98, 165);
     font-weight: 800;

@@ -165,15 +165,23 @@ function Beautypro() {
           <div className='container6'>
             <div class="card" style={{width: '20rem'}}>
               <img src="https://images.shaadisaga.com/shaadisaga_production/photos/pictures/000/577/505/original/40591191_271392043497596_914250463403248452_n.jpg?" class="card-img-top" alt="..." style={{padding:'15px',height:'390px'}}/>
+              <p>Type of their Work:- Hindi bridal makeup</p>
+              <p>Year:- 2020</p>
             </div>
             <div class="card" style={{width: '20rem'}}>
               <img src="https://www.shaadidukaan.com/vogue/wp-content/uploads/2019/07/EYE-MAKEUP.jpg" class="card-img-top" alt="..." style={{padding:'15px',height:'390px'}}/>
+              <p>Type of their Work:- Hindu bridal makeup</p>
+              <p>Year:- 2023</p>
             </div>
             <div class="card" style={{width: '20rem'}}>
               <img src="https://i.pinimg.com/736x/fb/d6/cc/fbd6cc0b87b540d3cb726ae2189decf8.jpg" class="card-img-top" alt="..." style={{padding:'15px'}}/>
+              <p>Type of their Work:- Haldi makeup look</p>
+              <p>Year:- 2022</p>
             </div>
             <div class="card" style={{width: '20rem'}}>
               <img src="https://www.mbmmakeupstudio.com/wp-content/uploads/2023/03/746fd902cb7f1515b6bf2707dcdab035.jpg" class="card-img-top" alt="..." style={{padding:'15px'}}/>
+              <p>Type of their Work:- Bridal makeup</p>
+              <p>Year:- 2021</p>
             </div>
           </div><br/><br/>
 

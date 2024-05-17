@@ -22,6 +22,7 @@ app.use(
  );
 
 
+
 app.use('/beautician', beauticianRoutes)
 app.use('/users',userRoutes)
 app.use('/rating',ratingRoutes)

@@ -8,3 +8,11 @@ a {
     color: rgb(230, 128, 145);
     font-weight: 800;
 }
+.pack {
+    /* display: inline; */
+    display: flex;
+    /* justify-content: space-around; */
+}
+/* .card {
+    width: 180px;
+} */

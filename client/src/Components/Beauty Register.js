@@ -8,6 +8,7 @@ function SignUpPage() {
   const [name, setName] = useState('');
   const [shopregisternumber, setRegisterNumber] = useState('');
   const [shopplace, setShopPlace] = useState('');
+  // const [packages, setPackages] = useState('');
   const [courseCertificates, setCourseCertificates] = useState('');
  
 
@@ -20,6 +21,7 @@ function SignUpPage() {
       name,
       shopregisternumber,
       shopplace,
+      // packages,
       courseCertificates
     };
     console.log(userData);
@@ -70,6 +72,9 @@ function SignUpPage() {
 
           <label>Shop Place</label><br/>
           <input type='text' id='shopplace' placeholder='Enter your place' value={shopplace} onChange={(e) => setShopPlace(e.target.value)} required /> <br/><br/>
+
+          {/* <label>Packages</label><br/>
+          <input type='text' id='packages' placeholder='Enter your pack' value={packages} onChange={(e) => setPackages(e.target.value)} required /> <br/><br/> */}
 
           <label>Course Certificates</label><br/>
           <input type='file' id='coursecertificates' placeholder='Import your files' value={courseCertificates} onChange={(e) => setCourseCertificates(e.target.value)} required /> <br/><br/>

@@ -8,10 +8,14 @@ const schema = new Mongoose.Schema({
         type:String,
         require:true,
     },
-    service:{
+    packages:{
         type:String,
         require:true,
-    }
+    },
+    works:{
+        type:String,
+        require:true,
+    },
 })
 
 const Beauticianprofile = Mongoose.model('Beauticianprofile',schema);

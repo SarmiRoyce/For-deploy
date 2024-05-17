@@ -7,35 +7,35 @@ import { useNavigate } from "react-router-dom";
 import { useState } from "react";
 
 export default function Login() {
-    const [email, setEmail] = useState();
-    const [password, setPassword] = useState();
-    const navigate = useNavigate();   
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+  const navigate = useNavigate();   
+  
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    const userdata = { email, password };
     
-    const handleSubmit = (e) => {
-      e.preventDefault();
-      const userdata = { email, password };
-      console.log(userdata);
-      
-      fetch("http://localhost:3002/user/login", {
-        method: 'POST',
-        headers: {
-            'Content-Type': 'application/json'
-        },
-        body: JSON.stringify(userdata) 
+    fetch("http://localhost:3002/user/login", {
+      method: 'POST',
+      headers: {
+          'Content-Type': 'application/json'
+      },
+      body: JSON.stringify(userdata) 
     })
-    
-        .then(userdata => {
-          console.log(userdata.data);
-          if (userdata.data === "Success") {
-            navigate("/");
-          } else if (userdata.data === "Success beautician") {
-            navigate("/Profilebeauty");
-          } else if (userdata.data === "Admin_Success") {
-            navigate("/Admin");
-          }
-        })
-        .catch((err) => console.log(err));
+      .then(response => response.json()) // Parse the JSON response
+      .then(data => {
+        console.log(data);
+        if (data === "Success") {
+          navigate("/");
+        } else if (data === "Success beautician") {
+          navigate("/Profilebeauty");
+        } else if (data === "Admin_Success") {
+          navigate("/Admin");
+        }
+      })
+      .catch((err) => console.log(err));
   };
+
 
   // const handleSubmit = require (handleSubmit)
   // const login = async () => {

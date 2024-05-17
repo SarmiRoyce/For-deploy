@@ -3,10 +3,10 @@ const User = require('../Models/Beauticianprofile.model');
 
 
 // Create
-exports.getUser = (req, res) => {
-   const user = User.find()
+exports.getBeautician = (req, res) => {
+   const beautician = User.find()
         .then(users => {
-            res.status(200).json(users);
+            res.status(200).json(beautician);
         })
         .catch(err => {
             res.status(500).json({ message: 'Something went wrong' });
@@ -14,11 +14,11 @@ exports.getUser = (req, res) => {
 };
 
 // Post
-exports.createUser = async (req, res) => { 
-    const user = new User (req.body) 
-    user.save()
+exports.createBeautician = async (req, res) => { 
+    const beautician = new User (req.body) 
+    beautician.save()
     .then(() => {
-        res.status(201).send(user);
+        res.status(201).send(beautician);
     })
     .catch(err => {
         res.status(500).send(err);
@@ -26,10 +26,10 @@ exports.createUser = async (req, res) => {
 };
 
 
-exports.getUserid = async (req, res) => {
+exports.getBeauticianid = async (req, res) => {
     try {
-        const user = await User.findById(req.params.id);
-        res.status(200).json(user);
+        const beautician = await User.findById(req.params.id);
+        res.status(200).json(beautician);
     }
     catch (error) {
         res.status(400).send(error);
@@ -38,27 +38,29 @@ exports.getUserid = async (req, res) => {
 
 
 // Update
-exports.updateUserid = async (req, res) => {
+exports.updateBeauticianid = async (req, res) => {
+    const id = req.params.id;
     try {
-      const {id} = req.params
-      await User.findByIdAndUpdate(id, req.body);
-      const user = await User.findById(id);
-      res.status(200).json(user);
-    } catch (error) {
-      res.status(400).send(error);
+        const beautician = await User.findByIdAndUpdate({ _id: id });
+        if (!beautician) {
+            return res.status(404).json({ message: 'Beautician not found' });
+        }
+        res.status(200).json({ message: 'Beautician updated successfully' });
+    } catch (err) {
+        res.status(500).json({ message: 'Something went wrong' });
     }
 };
 
 
 // Delete
-exports.deleteUser = async (req, res) => {
+exports.deleteBeautician = async (req, res) => {
     const id = req.params.id;
     try {
-        const user = await User.findOneAndDelete({ _id: id });
-        if (!user) {
-            return res.status(404).json({ message: 'User not found' });
+        const beautician = await Beautician.findOneAndDelete({ _id: id });
+        if (!beautician) {
+            return res.status(404).json({ message: 'Beautician  not found' });
         }
-        res.status(200).json({ message: 'User deleted successfully' });
+        res.status(200).json({ message: 'Beautician  deleted successfully' });
     } catch (err) {
         res.status(500).json({ message: 'Something went wrong' });
     }
