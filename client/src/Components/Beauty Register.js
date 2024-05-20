@@ -47,7 +47,7 @@ function SignUpPage() {
 
     <div className='login-full'>
     
-      <form className='Login' onSubmit={handleSubmit} style={{marginTop:'25px'}}>
+      <form className='Login' onSubmit={handleSubmit}>
 
         <div>
           <img src="https://images.pexels.com/photos/11742213/pexels-photo-11742213.jpeg?cs=srgb&dl=pexels-imadclicks-11742213.jpg&fm=jpg" alt="Attractive fashion " style={{height:'720px',width:'420px'}}/>

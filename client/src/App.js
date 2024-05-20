@@ -16,6 +16,8 @@ import Book from './Pages/Book'
 import Admin from './Pages/Admin'
 import Profilebeauty from './Pages/Profile'
 import Adprofile from './Components/addProfile'
+import Showprofile from './Pages/showprofile'
+
 
 
 
@@ -39,6 +41,8 @@ function App() {
         <Route path='/Admin' element ={<Admin/>}/>
         <Route path='/Profilebeauty' element ={<Profilebeauty/>}/>
         <Route path='/Addprofile' element ={<Adprofile/>}/>
+        <Route path='/showprofile' element ={<Showprofile/>}/>
+
 
         
 

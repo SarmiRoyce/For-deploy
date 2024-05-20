@@ -84,4 +84,90 @@
     background-color: rgb(221, 23, 89); 
     transition: background-color 0.2s;
   } */
-  
+  /* ViewProfile.css */
+
+.profile-header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.profile-header img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+.container {
+  margin-bottom: 20px;
+}
+
+.container h3 {
+  font-weight: 800;
+}
+
+.portfolio {
+  text-align: center;
+}
+
+.portfolio .row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.portfolio .col-md-4 {
+  margin-bottom: 20px;
+}
+
+.portfolio img {
+  width: 100%;
+  height: auto;
+}
+
+.contact {
+  text-align: center;
+}
+
+.contact p {
+  margin-bottom: 10px;
+}
+
+.contact ul {
+  list-style: none;
+  padding: 0;
+}
+
+.contact ul li {
+  margin-bottom: 5px;
+}
+/* Profile.css */
+.beautician-card {
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 10px;
+  margin: 10px;
+  text-align: center;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.beautician-card:hover {
+  transform: scale(1.05);
+}
+
+.beautician-card img {
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+
+.beautician-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+/* Rest of your CSS remains the same */

@@ -58,7 +58,7 @@ exports.LoginUser = (req, res) => {
                 { expiresIn: "1d" }
               );
               res.cookie("token", token, { httpOnly: true });
-              res.json("Success beautuician");
+              res.json("Success beautician");
             } else {
               res.status(401).json("Password is incorrect.");
             }

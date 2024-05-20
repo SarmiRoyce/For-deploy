@@ -33,7 +33,6 @@
 .beauty h2 {
     color: rgb(255, 98, 165);
     font-weight: 800;
-    /* color: rgb(230, 128, 145); */
 }
 .profile-details {
     color: rgb(255, 98, 165);
@@ -45,7 +44,7 @@
     margin-left: 230px;
 }
 table tr td {
-    width: 178px;
+    width: 150px;
 }
 table tr td button {
     border-radius: 10px;

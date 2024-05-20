@@ -15,7 +15,9 @@ function Footer() {
             <img class="img3" src={image} /></a>
             </li>
         </ul>
-      </div>
+      </div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+
 
 
       <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
@@ -35,7 +37,7 @@ function Footer() {
             <a href="/Contact" class="text-body">Contact Us</a>
           </li>
         </ul>
-      </div>
+      </div>&nbsp;&nbsp;&nbsp;
 
       <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
         <h5 class="text-uppercase">Contact Us</h5>

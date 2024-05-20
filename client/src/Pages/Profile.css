@@ -1,45 +1,233 @@
-.profile-header {
+/* Profile.css */
+
+/* .profile-header {
     text-align: center;
-    padding: 30px;
-    background-color: #f5f5f5;
-}
+    margin: 20px 0;
+  }
+  
+  .profile-header img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+  }
+  
+  .profile-header input[type="text"] {
+    display: block;
+    margin: 10px auto;
+    padding: 5px;
+    font-size: 18px;
+    width: 80%;
+    max-width: 400px;
+    text-align: center;
+  }
+  
+  .container {
+    margin: 20px 0;
+  }
+  
+  .container h3 {
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .container div {
+    margin-bottom: 10px;
+  }
+  
+  .container div input[type="checkbox"] {
+    margin-right: 10px;
+  }
+  
+  .container.portfolio {
+    margin-top: 40px;
+  }
+  
+  .container.portfolio h2 {
+    font-weight: 600;
+    margin-top: 20px;
+    text-align: center;
+  }
+  
+  .row {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  
+  .col-md-4 {
+    flex: 1;
+    margin: 10px;
+    max-width: 300px;
+  }
+  
+  .col-md-4 img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+  }
+  
+  .col-md-4 p {
+    text-align: center;
+    font-size: 22px;
+    margin-top: 10px;
+  }
+  
+  .container.contact {
+    text-align: center;
+    margin-top: 40px;
+  }
+  
+  .container.contact input[type="text"] {
+    display: block;
+    margin: 10px auto;
+    padding: 5px;
+    font-size: 18px;
+    width: 80%;
+    max-width: 400px;
+  }
+  
+  .container.contact button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 18px;
+  } */
+  
+
+
+
+
+
+  /* Profile.css */
+/* .profile-header {
+  text-align: center;
+  margin-bottom: 20px;
+} */
 
 .profile-header img {
-    border-radius: 50%;
-    width: 250px;
-    height: 250px;
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  margin-bottom: 20px;
 }
 
-.services, .works, .contact {
-    padding: 20px;
+.profile-header input[type="text"] {
+  display: block;
+  margin: 10px auto;
+  padding: 5px;
+  width: 80%;
 }
 
-.portfolio img {
-    max-width: 100%;
-    height: auto;
+.container {
+  margin: 20px auto;
+  padding: 10px;
+  /* border: 1px solid #ddd; */
+  border-radius: 10px;
+  width: 90%;
+  max-width: 800px;
 }
 
-.col-md-4 {
-    text-align: center;
+/* .container h3 {
+  text-align: center;
+} */
+
+.container .row {
+  /* display: flex; */
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
-.container label{
-    font-size: 20px;
-    display: flex;
-    /* justify-content: space-between; */
-}
-.btn {
-    color: white;
-    padding: 10px 35px; 
-    font-size: 23px;
-    border: none;
-    border-radius: 10px; 
-    cursor: pointer;
-    margin-left: 550px;
-    margin-top: 20px;
-    background-color: rgb(221, 23, 89); 
-    transition: background-color 0.3s;
+.container .col-md-4 {
+  margin: 10px;
+  text-align: center;
 }
 
+.container .col-md-4 img {
+  max-width: 100%;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
 
+.container .col-md-4 input[type="file"],
+.container .col-md-4 input[type="text"] {
+  display: block;
+  margin: 5px auto;
+  padding: 5px;
+  width: 90%;
+}
+
+.container .col-md-4 button {
+  background-color: #f44336;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 5px;
+}
+
+.container .col-md-4 button:hover {
+  background-color: #d32f2f;
+}
+
+.container .contact {
+  text-align: center;
+}
+
+.container .contact input[type="text"] {
+  display: block;
+  margin: 10px auto;
+  padding: 5px;
+  width: 80%;
+}
+
+.container .contact button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.container .contact button:hover {
+  background-color: #0056b3;
+}
+
+.container .contact a {
+  text-decoration: none;
+}
+
+.container .contact a button {
+  margin-top: 20px;
+}
+
+.container .contact div {
+  margin-bottom: 20px;
+}
+
+.container .contact h3 {
+  margin-bottom: 10px;
+}
+
+.container .contact div input[type="text"] {
+  display: inline-block;
+  width: calc(50% - 20px);
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+
+.container .contact div button {
+  background-color: #f44336;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.container .contact div button:hover {
+  background-color: #d32f2f;
+}
 

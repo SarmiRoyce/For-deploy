@@ -1,9 +1,14 @@
-.contact-full {
-  background-color: rgb(52, 51, 51);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 90vh;
+  .form {
+    width: 1000px;         
+    height: 600px;        
+    margin: 20px auto;    
+    padding: 50px;        
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); 
+    background-color: white;
+    border-radius: 10px;
+    align-items: center;   
+    display: flex;        
+    justify-content: space-evenly; 
 }
 
 .Contact {
@@ -17,49 +22,63 @@
   align-items: center;
 }
 
-.contact-text label {
-  font-size: 25px;
+.form-full {
+  background-color: rgb(52, 51, 51);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 90vh;
 }
 
-.contact-text input {
-  border-radius: 3px;
-  width: 450px;
-  height: 45px;
-  padding: 8px;
-  border: 1px solid black;
+.form div {
+    margin-bottom: 12px; 
 }
 
-.contact-text h1 {
-  color: rgb(255, 98, 165);
-  font-weight: 800;
-  text-align: center;
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 19px; 
 }
 
-.btn15 {
-  color: white;
-  padding: 10px 35px; 
-  font-size: 23px;
-  border: none;
-  border-radius: 10px; 
-  cursor: pointer;
-  background-color: rgb(221, 23, 89); 
-  transition: background-color 0.3s;
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;         
+    padding: 8px;        
+    border: 1px solid #ccc;
+    border-radius: 4px; 
 }
 
-   
+.button {
+    padding: 10px 35px;  
+    background-color: rgb(221, 23, 89);
+    color: white; 
+    font-size: 23px;     
+    border: none;        
+    border-radius: 10px;  
+    width: 100%;
+}
+
+.button:hover {
+    background-color: rgb(249, 3, 85); 
+}
 
 
-  /* @media (max-width: 600px) {
-    .form-container {
-      padding: 10px; 
+
+
+
+/* RESPONSIVE */
+/* @media (max-width: 600px) {
+  .form-container {
+    padding: 10px; 
+
+  }
+  .form-input {
+    font-size: 14px;
+
+  }
+  .form-button {
+    padding: 8px 16px; 
   
-    }
-    .form-input {
-      font-size: 14px;
-  
-    }
-    .form-button {
-      padding: 8px 16px; 
-    
-  } */
-  
+} 
+} */

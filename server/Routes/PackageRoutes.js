@@ -35,3 +35,18 @@
 // }
 
 // export default Packages;
+
+
+// routes/packageRoutes.js
+
+const express = require('express');
+const router = express.Router();
+const packageController = require('../controllers/packageController');
+
+// Route to get all packages
+router.get('/packages', packageController.getAllPackages);
+
+// Route to get details of a specific package
+router.get('/packages/:packageName', packageController.getPackageByName);
+
+module.exports = router;
