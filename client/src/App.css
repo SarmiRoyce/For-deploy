@@ -28,50 +28,49 @@
   } */
 
 
-  /* Contact */
-  /* .container {
-    margin-right: 10px;
-    margin-top: 30px;
-  } */
-  /* .form1 {
-    max-width: 900px;
-    margin: 0 auto;
+  /* Register Page */
+
+  .Register {
     padding: 40px;
-    border: 1px solid #ccc;
-    border-radius: 30px;
-    background-color: rgb(246, 170, 183);
-    box-shadow: 0 2px 5px blue;
-  }
-  .form-label5 {
-    font-weight: bold;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    background-color: white;
+    border-radius: 10px;
+    width: 1000px;
+    display: flex;
+    align-items: center;
+}
+.register-full {
+    background-color: rgb(52, 51, 51);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.register-text label {
     font-size: 20px;
-    display: block;
-    margin-bottom: 18px;
-    color: #333;
-  }
-  .form-control {
-    width: 100%; 
-    padding: 15px; 
-    border: 1px solid #ccc;
+}
+.register-text input {
     border-radius: 5px;
-    font-size: 16px;
-  }
-  .form-control:focus {
-    border-color: black;
-    outline: none;
-    box-shadow: 0 0 5px rgb(245, 131, 150); 
-  } */
-  /* .btn15 {
-    background-color: rgb(245, 131, 150); 
-    color: white;
-    padding: 10px 35px; 
-    font-size: 22px;
-    border: none;
-    border-radius: 10px; 
-    cursor: pointer;
-    background-color: rgb(221, 23, 89); 
-    transition: background-color 0.3s;
-  } */
+    width: 400px;
+    height: 45px;
+    padding: 8px;
+    border: 1px solid #ccc;
+}
+
+.btn15 {
+  background-color: rgb(245, 131, 150); 
+  color: white;
+  padding: 10px 35px; 
+  font-size: 22px;
+  border: none;
+  border-radius: 10px; 
+  cursor: pointer;
+  background-color: rgb(221, 23, 89); 
+  transition: background-color 0.3s;
+}
+
+
+
   /* Beauticians */
   /* .btn12 {
     background-color: rgb(245, 131, 150); 
@@ -84,6 +83,7 @@
     background-color: rgb(221, 23, 89); 
     transition: background-color 0.2s;
   } */
+
   /* ViewProfile.css */
 
 .profile-header {
@@ -171,3 +171,15 @@
 }
 
 /* Rest of your CSS remains the same */
+
+.btn10 {
+  color: white;
+  padding: 5px 15px; 
+  font-size: 23px;
+  border: none;
+  border-radius: 10px; 
+  /* margin-left: 830px; */
+  cursor: pointer;
+  background-color: rgb(221, 23, 89); 
+  transition: background-color 0.2s;
+}

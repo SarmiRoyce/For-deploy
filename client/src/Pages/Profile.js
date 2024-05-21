@@ -10,18 +10,18 @@ function Profile() {
       location: 'Vavuniya',
       image: 'https://t4.ftcdn.net/jpg/03/69/47/87/240_F_369478756_SkWCRczifgskGOYA7HWQ4NjGYeFwqNI9.jpg',
       services: {
-        hairCutting: false,
-        nailArt: false,
-        manicure: false,
-        facial: false,
-        pedicure: false,
-        eyebrowShape: false,
-        hairColoring: false,
-        normalMakeup: false,
-        bridalMakeup: false,
-        hairStyle: false,
-        sareeDraping: false,
-        nailEnhancements: false,
+        HairCutting: false,
+        NailArt: false,
+        Manicure: false,
+        Facial: false,
+        Pedicure: false,
+        EyebrowShape: false,
+        HairColoring: false,
+        NormalMakeup: false,
+        BridalMakeup: false,
+        HairStyle: false,
+        SareeDraping: false,
+        NailEnhancements: false,
       },
       email: 'mary@example.com',
       instagram: '@mary_beauty',
@@ -111,7 +111,9 @@ function Profile() {
   
     const handleSubmit = (e) => {
       e.preventDefault();
+      
       const data = new FormData();
+      console.log(data)
       data.append('data', JSON.stringify({
           ...formData,
           works: formData.works.map(work => ({
@@ -141,7 +143,7 @@ function Profile() {
   
 
   return (
-    <div>
+    <div className="pro-form">
       <form onSubmit={handleSubmit}>
         <div className="profile-header">
           <img src={formData.image} alt="Beautician's Photo" />
@@ -182,10 +184,13 @@ function Profile() {
           />
         </div>
 
-        <div className="container">
-          <h3 style={{ fontWeight: '800' }}>Service Offered</h3>
-          {Object.keys(formData.services).map((service, index) => (
-            <div key={index} style={{ display: 'flex', justifyContent: 'space-evenly', width: '150px' }}>
+        <div className="container14">
+          {/* <h3 style={{ fontWeight: '800' }}>Service Offered</h3> */}
+           <a href='/Beauty'>  <button type="submit" className="btn btn-primary">Services</button></a>
+        </div>
+
+          {/* {Object.keys(formData.services).map((service, index) => (
+            <div key={index} style={{ display: 'flex', width: '250px',marginLeft:'50px' }}>
               <input
                 type="checkbox"
                 name={service}
@@ -194,8 +199,8 @@ function Profile() {
               />
               <label>{service.replace(/([A-Z])/g, ' $1').trim()}</label>
             </div>
-          ))}
-        </div>
+          ))} */}
+       
 
         <div className="container portfolio">
           <h2 style={{ fontWeight: '600', marginTop: '20px', textAlign: 'center' }}>Works</h2><br />
@@ -241,7 +246,7 @@ function Profile() {
             placeholder="Instagram"
           />
           <div>
-            <h3 style={{ fontWeight: '800' }}>Business Hours</h3>
+            <h3 style={{ fontWeight: '800',marginTop:'30px' }}>Business Hours</h3>
             {formData.businessHours.map((hour, index) => (
               <div key={index} style={{ display: 'flex', alignItems: 'center', marginBottom: '10px' }}>
                 <input
@@ -269,6 +274,7 @@ function Profile() {
         </div>
       </form>
     </div>
+    
   );
 }
 

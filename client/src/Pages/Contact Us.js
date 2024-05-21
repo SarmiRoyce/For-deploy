@@ -42,6 +42,7 @@
 
 import React, { useState } from 'react';
 import Navbar from '../Components/nav';
+import Footer from '../Components/Footer';
 import './Contact Us.css'
 
 function ContactForm() {
@@ -86,7 +87,7 @@ function ContactForm() {
             <div>
                 <img src="https://i.pinimg.com/736x/0e/73/90/0e7390495ce94725b4fb05bd974049cb.jpg"  style={{height:'400px', marginTop:'100px'}} />
             </div>
-            <div style={{marginTop:'96px'}}>
+            <div style={{marginTop:'90px'}}>
           <h2 style={{width:'200px'}}><b>Contact Us</b></h2>
             <div>
                 <label htmlFor="name">Name:</label>
@@ -126,6 +127,7 @@ function ContactForm() {
             <span>{result}</span>
         </form>
         </div>
+        <Footer/>
         </div>
     );
 }

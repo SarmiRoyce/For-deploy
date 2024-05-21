@@ -28,7 +28,7 @@ function Beautician() {
                                     <span key={i} className={`fa fa-star ${i < beautician.rating ? 'checked' : ''}`} style={{ color: 'yellow' }}></span>
                                 ))}
                             </div>
-                            <a href="/Beauty"><button className='btn12'>View Profile</button></a>
+                            <a href="/showprofile"><button className='btn12'>View Profile</button></a>
                         </div>
                     </div>
                 ))}

@@ -19,13 +19,14 @@ const profileSchema = new mongoose.Schema({
   experience: { type: String, required: true },
   location: { type: String, required: true },
   image: { type: String, required: true },
-  services: { type: Map, of: Boolean },
+  // services: { type: servicesSchema, required: true },
+  services: {  HairCutting, NailArt, Manicure, Facial, Pedicure, EyebrowShape, HairColoring, NormalMakeup, BridalMakeup, HairStyle, SareeDraping, NailEnhancements, },
   email: { type: String, required: true },
   instagram: { type: String, required: true },
   businessHours: [
     {
-      day: { type: String },
-      time: { type: String },
+      day: { type: String, required: true },
+      time: { type: String, required: true },
     },
   ],
   works: [workSchema],

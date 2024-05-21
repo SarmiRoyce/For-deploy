@@ -77,10 +77,10 @@ export default function Login() {
     <div className='login-text'>
       {/* <img class="img3" src={image} style={{marginLeft:'80px'}}/><br/><br/> */}
       <h1 style={{marginLeft:'50px',fontWeight:'800'}}>Login</h1><br/>
-      <label>Email Address</label><br/>
+      <label>Email Address</label>
       <input type='Email' placeholder='Enter your email'onChange={(e)=>setEmail(e.target.value)}></input><br/><br/>
 
-      <label>Password</label><br/>
+      <label>Password</label>
       <input type='Password' placeholder='Enter your password' onChange={(e)=>setPassword(e.target.value)}></input><br/><br/>
 
       <button className='btn4'>Login</button><br/><br/><br/>

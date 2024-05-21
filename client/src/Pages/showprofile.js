@@ -79,6 +79,8 @@ function ViewProfile() {
               <li key={index}>{hour.day}: {hour.time}</li>
             ))}
           </ul>
+          <a href='/Book'><button className='btn10'>Book Now</button><br/><br/></a>
+        
         </div>
       </div>
     </div>

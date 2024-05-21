@@ -37,8 +37,9 @@ function AddProfile() {
 
   return (
     <div className='add-profile'>
-      <h1>Add Beautician Profile</h1>
+      
       <form onSubmit={handleSubmit}>
+      <h1>Add Beautician Profile</h1>
         <label>
           Name:<br/>
           <input type="text" name="name" value={profile.name} onChange={handleChange} required />
@@ -66,10 +67,7 @@ function AddProfile() {
             <option value="Nail Exhancements">Nail Exhancements</option>
           </select>
         </label>
-        {/* <label>
-          Packages:<br/>
-          <input type="text" name="packages" value={profile.packages} onChange={handleChange} required />
-        </label> */}
+     
         <label>
           Works:<br/>
           <input type="text" name="works" value={profile.works} onChange={handleChange} required />

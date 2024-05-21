@@ -1,5 +1,6 @@
 import React from 'react'
 import image from '../Components/Gorgeous Queen.png';
+import "./Footer.css";
 
 function Footer() {
   return (

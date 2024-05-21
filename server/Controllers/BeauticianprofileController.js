@@ -93,11 +93,29 @@ exports.createProfile = async (req, res) => {
 
 exports.getProfiles = async (req, res) => {
   try {
-    const profile = await Profile.findOne(); // Adjust the query as necessary
+    const profile = await Profile.findOne(); 
     res.json(profile);
   } catch (error) {
     res.status(500).json({ error: error.message });
   }
+};
+
+exports.updateService = async (req, res) => {
+  try {
+    const data = req.body
+    console.log(data.services)
+  } catch (error) {
+    res.status(500).json({ error: error.message });
+  }
+};
+
+exports.getServices = async (req, res) => {
+  try {
+    const beauticians = await Services.find();
+    res.json(beauticians);
+} catch (err) {
+    res.status(500).json({ message: err.message });
+}
 };
 
 exports.viewProfiles = async (req, res) => {
