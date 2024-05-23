@@ -117,31 +117,6 @@
 
 
 
-// // import React, { useState } from 'react';
-
-// // function DropdownBar() {
-// //   const [selectedOption, setSelectedOption] = useState('');
-
-// //   const handleSelectChange = (event) => {
-// //     setSelectedOption(event.target.value);
-// //   };
-
-// //   return (
-// //     <div>
-// //       <label htmlFor="packages">Select a package:</label>
-// //       <select id="packages" value={selectedOption} onChange={handleSelectChange}>
-// //         <option value="">Select...</option>
-// //         <option value="Hair Cutting">Hair Cutting</option>
-// //         <option value="Nail Art">Nail Art</option>
-// //         <option value="Manicure">Manicure</option>
-// //         {/* Add more options as needed */}
-// //       </select>
-// //       {selectedOption && <p>You selected: {selectedOption}</p>}
-// //     </div>
-// //   );
-// // }
-
-
 
 
 
@@ -335,6 +310,8 @@
 // }
 
 // export default Packages;
+
+
 
 
 
@@ -583,3 +560,175 @@ function Packages() {
 }
 
 export default Packages
+
+
+
+
+
+// import React, { useState, useEffect } from 'react';
+// import Navbar from '../Components/nav';
+// import Footer from '../Components/Footer';
+// import '../Pages/Packages.css';
+
+// function Packages() {
+//   const [profiles, setProfiles] = useState([]);
+//   const [selectedService, setSelectedService] = useState(null);
+
+//   // Fetch profiles data from the backend
+//   useEffect(() => {
+//     fetch('http://localhost:3002/beauticianprofile/view') // Adjust the endpoint as necessary
+//       .then(response => response.json())
+//       .then(data => {
+//         if (Array.isArray(data)) {
+//           setProfiles(data);
+//         } else {
+//           console.error('Error: Profiles data is not an array', data);
+//         }
+//       })
+//       .catch(error => console.error('Error fetching profiles:', error));
+//   }, []);
+
+//   const handleToggle = (service) => {
+//     if (selectedService === service) {
+//       setSelectedService(null);
+//     } else {
+//       setSelectedService(service);
+//     }
+//   };
+
+//   // Extract unique services from profiles
+//   const services = [...new Set(profiles.flatMap(profile => profile.services))];
+
+//   return (
+//     <div className='beauty'>
+//       <Navbar />
+//       <h1 style={{ marginTop: '30px' }}>Beautician's Packages</h1><br />
+
+//       {/* Dropdown menu for selecting packages */}
+//       <select onChange={(e) => handleToggle(e.target.value)}>
+//         <option value="">Select a package</option>
+//         {services.map((service, index) => (
+//           <option key={index} value={service}>
+//             {service}
+//           </option>
+//         ))}
+//       </select>
+
+//       {/* Render content based on selected package */}
+//       {selectedService && (
+//         <div className='pack'>
+//           {profiles
+//             .filter(profile => profile.services.includes(selectedService))
+//             .map(profile => (
+//               <div key={profile._id} className='card' style={{ width: '18rem', height: '18rem' }}>
+//                 <img src={profile.image} className="card-img-top" alt={profile.name} style={{ padding: '10px', width: '150px', height: '170px' }} />
+//                 <div className="card-body">
+//                   <h5 className="card-title">{profile.name}</h5>
+//                   <p className="card-text">{profile.description}</p>
+//                 </div>
+//               </div>
+//             ))}
+//         </div>
+//       )}
+
+//       <Footer />
+//     </div>
+//   );
+// }
+
+// export default Packages;
+
+
+
+
+
+
+
+
+// NEW ONE
+
+
+// import React, { useState, useEffect } from 'react';
+
+// const ServicesDropdown = () => {
+//   const [services, setServices] = useState([]);
+//   const [selectedService, setSelectedService] = useState('');
+//   const [beauticians, setBeauticians] = useState([]);
+
+//   useEffect(() => {
+//     const fetchServices = async () => {
+//       try {
+//         const response = await fetch('http://localhost:3002/beauticianprofile/view');
+//         if (!response.ok) {
+//           throw new Error('Network response was not ok');
+//         }
+//         const data = await response.json();
+
+//         // Check if the response is an array
+//         if (Array.isArray(data)) {
+//           setServices(data);
+//         } else {
+//           console.error('Expected array but received:', data);
+//         }
+//       } catch (error) {
+//         console.error('Failed to fetch services:', error);
+//       }
+//     };
+
+//     fetchServices();
+//   }, []);
+
+//   useEffect(() => {
+//     const fetchBeauticians = async () => {
+//       if (selectedService) {
+//         try {
+//           const response = await fetch(`http://localhost:3002/beauticians/package/${selectedService}`);
+//           if (!response.ok) {
+//             throw new Error('Network response was not ok');
+//           }
+//           const beauticians = await response.json();
+//           setBeauticians(beauticians);
+//         } catch (error) {
+//           console.error('Failed to fetch beauticians:', error);
+//         }
+//       } else {
+//         setBeauticians([]);
+//       }
+//     };
+
+//     fetchBeauticians();
+//   }, [selectedService]);
+
+//   return (
+//     <div>
+//       <h1>Beautician Packages</h1>
+//       <label htmlFor="servicesDropdown">Choose a service:</label>
+//       <select
+//         id="servicesDropdown"
+//         value={selectedService}
+//         onChange={(e) => setSelectedService(e.target.value)}
+//       >
+//         <option value="">Select a service</option>
+//         {services.map((service, index) => (
+//           <option key={index} value={service}>
+//             {service}
+//           </option>
+//         ))}
+//       </select>
+
+//       {selectedService && (
+//         <div>
+//           <h2>Beauticians offering {selectedService}</h2>
+//           <ul>
+//             {beauticians.map((beautician, index) => (
+//               <li key={index}>{beautician.name}</li>
+//             ))}
+//           </ul>
+//         </div>
+//       )}
+//     </div>
+//   );
+// };
+
+// export default ServicesDropdown;
+

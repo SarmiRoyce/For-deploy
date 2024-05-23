@@ -1,5 +1,8 @@
 const Mongoose = require ("mongoose");
 const schema = new Mongoose.Schema ({
+    id:{
+        type:Mongoose.Schema.Types.ObjectId
+    },
     email: {
         type:String,
         require:true,

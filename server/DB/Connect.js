@@ -6,7 +6,7 @@ const beauticianRoutes = require('../Routes/BeauticianRoutes');
 const beauticianprofileRoutes = require('../Routes/BeauticianprofileRoutes');
 const bookingRoutes = require('../Routes/BookingRoutes');
 const ratingRoutes = require('../Routes/RatingRoutes');
-const LoginRoutes =require('../Routes/LoginRoutes')
+const LoginRoutes =require('../Routes/LoginRoutes');
 const express = require('express');
 const bodyParser = require('body-parser');
 const cors = require ('cors')
@@ -46,8 +46,10 @@ function connectDb() {
    app.listen(PORT, () => {
       console.log(`Server is running on the port ${PORT}`)
    })
+   
 
 
 }
 
 module.exports = connectDb;
+

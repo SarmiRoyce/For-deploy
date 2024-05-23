@@ -1,5 +1,49 @@
 // const express = require('express');
 // const router = express.Router();
+// const { createProfile, getProfiles, viewProfiles } = require('../Controllers/BeauticianprofileController');
+// const multer = require('multer');
+// const path = require('path');
+
+// const storage = multer.diskStorage({
+//   destination: function (req, file, cb) {
+//     cb(null, 'uploads/');
+//   },
+//   filename: function (req, file, cb) {
+//     cb(null, `${Date.now()}-${file.originalname}`);
+//   },
+// });
+
+// const upload = multer({ storage: storage });
+
+// router.post('/create',createProfile);
+// router.get('/view', getProfiles);
+// router.get('/show', viewProfiles);
+// // router.post('/update', updateService);
+
+// // , upload.array('works[imageFile]', 10), 
+// module.exports = router;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// const express = require('express');
+// const router = express.Router();
 // const beauticianProfileController = require('../Controllers/BeauticianprofileController');
 // router.get('/view', beauticianProfileController.getBeautician);
 // router.post('/create', beauticianProfileController.createBeautician);
@@ -11,7 +55,7 @@
 
 const express = require('express');
 const router = express.Router();
-const { createProfile, getProfiles, viewProfiles, updateService } = require('../Controllers/BeauticianprofileController');
+const { createProfile, getProfiles, viewProfiles, updateService,getServices} = require('../Controllers/BeauticianprofileController');
 const multer = require('multer');
 const path = require('path');
 
@@ -34,3 +78,4 @@ router.get('/services', getServices);
 
 
 module.exports = router;
+

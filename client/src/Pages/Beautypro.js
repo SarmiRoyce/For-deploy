@@ -192,162 +192,218 @@
 //   )
 // }
 
-// export default Beautypro
-
-
-
-
-
-
-
-
-
-
-import React, { useState } from 'react';
-import Navbar from '../Components/nav';
-import '../Pages/Beautypro.css'
-
+// export default Beautyproimport React, { useState } from 'react';
+import { Link } from 'react-router-dom';
+import './Beautypro.css';
+import { useState } from 'react';
 
 const MultiSelectForm = () => {
-  const [formData, setFormData] = useState({
-    services: [],
-  });  
+  const [formData, setFormData] = useState({ services: [] });
+
   const handleChange = (e) => {
-    const { value, type, checked } = e.target;
-    if (type === 'checkbox') {
-      let newOptions = formData.services;
-      if (checked) {
-        newOptions.push(value);
-      } else {
-        newOptions = newOptions.filter(option => option !== value);
-      }
-      setFormData({ ...formData, options: newOptions });
-    } 
-    else {
-      // setFormData({ ...formData, [name]: value });
+    const { value, checked } = e.target;
+    let newOptions = formData.services;
+
+    if (checked) {
+      newOptions = [...newOptions, value];
+    } else {
+      newOptions = newOptions.filter(option => option !== value);
     }
-  };  
-  const handleSubmit = async (e) => {
+
+    setFormData({ ...formData, services: newOptions });
+  };
+
+  const handleSubmit = (e) => {
     e.preventDefault();
-    console.log(formData)
-    try {
-      const response = await fetch('http://localhost:3002/beauticianprofile/update', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify(formData),
-      });
-      const result = await response.json();
-      console.log(result);
-    } catch (error) {
-      console.error('Error:', error);
-    }
-  };  return (
+    console.log('Selected Services:', formData.services);
+    // Handle form submission (e.g., send the data to the server)
+  };
+
+  return (
     <div className="beauty-form">
-    <form onSubmit={handleSubmit}>
-      <div>
-        <label>Services:</label>
+      <form onSubmit={handleSubmit}>
         <div>
-          <input
-            type="checkbox"
-            name="services"
-            value="Hair"
-            onChange={handleChange}
-          /> Hair Cutting
+          <label>Services:</label>
+          <div>
+            <input
+              type="checkbox"
+              name="services"
+              value="HairCutting"
+              onChange={handleChange}
+            /> Hair Cutting
+          </div>
+          <div>
+            <input
+              type="checkbox"
+              name="services"
+              value="NailArt"
+              onChange={handleChange}
+            /> Nail Art
+          </div>
+          <div>
+            <input
+              type="checkbox"
+              name="services"
+              value="Manicure"
+              onChange={handleChange}
+            /> Manicure
+          </div>
+          <div>
+            <input
+              type="checkbox"
+              name="services"
+              value="Facial"
+              onChange={handleChange}
+            /> Facial
+          </div>
+          <div>
+            <input
+              type="checkbox"
+              name="services"
+              value="Pedicure"
+              onChange={handleChange}
+            /> Pedicure
+          </div>
+          <div>
+            <input
+              type="checkbox"
+              name="services"
+              value="EyebrowShape"
+              onChange={handleChange}
+            /> Eyebrow Shape
+          </div>
+          <div>
+            <input
+              type="checkbox"
+              name="services"
+              value="HairColoring"
+              onChange={handleChange}
+            /> Hair Coloring
+          </div>
+          <div>
+            <input
+              type="checkbox"
+              name="services"
+              value="NormalMakeup"
+              onChange={handleChange}
+            /> Normal Makeup
+          </div>
+          <div>
+            <input
+              type="checkbox"
+              name="services"
+              value="BridalMakeup"
+              onChange={handleChange}
+            /> Bridal Makeup
+          </div>
+          <div>
+            <input
+              type="checkbox"
+              name="services"
+              value="HairStyle"
+              onChange={handleChange}
+            /> Hair Style
+          </div>
+          <div>
+            <input
+              type="checkbox"
+              name="services"
+              value="SareeDraping"
+              onChange={handleChange}
+            /> Saree Draping
+          </div>
+          <div>
+            <input
+              type="checkbox"
+              name="services"
+              value="NailExhancements"
+              onChange={handleChange}
+            /> Nail Enhancements
+          </div>
         </div>
-        <div>
-          <input
-            type="checkbox"
-            name="services"
-            value="Nail"
-            onChange={handleChange}
-          /> Nail Art
+
+        <div className="container14">
+          <Link
+            to={{
+              pathname: "/Profilebeauty",
+              state: { serviceData: formData.services }
+            }}
+          >
+            <button type="submit" onClick={handleSubmit}>Submit</button>
+          </Link>
         </div>
-        <div>
-          <input
-            type="checkbox"
-            name="services"
-            value="Manicure"
-            onChange={handleChange}
-          /> Manicure
-        </div>
-        <div>
-          <input
-            type="checkbox"
-            name="services"
-            value="Facial"
-            onChange={handleChange}
-          /> Facial
-        </div>
-        <div>
-          <input
-            type="checkbox"
-            name="services"
-            value="Pedicure"
-            onChange={handleChange}
-          /> Pedicure
-        </div>
-        <div>
-          <input
-            type="checkbox"
-            name="services"
-            value="EyebrowShape"
-            onChange={handleChange}
-          /> EyebrowShape
-        </div>
-        <div>
-          <input
-            type="checkbox"
-            name="services"
-            value="Coloring"
-            onChange={handleChange}
-          /> Hair Coloring
-        </div>
-        <div>
-          <input
-            type="checkbox"
-            name="services"
-            value="NormalMakeup"
-            onChange={handleChange}
-          /> NormalMakeup
-        </div>
-        <div>
-          <input
-            type="checkbox"
-            name="services"
-            value="Bridal"
-            onChange={handleChange}
-          /> Bridal Makeup
-        </div>
-        <div>
-          <input
-            type="checkbox"
-            name="services"
-            value="Style"
-            onChange={handleChange}
-          /> Hair Style
-        </div>
-        <div>
-          <input
-            type="checkbox"
-            name="services"
-            value="Saree"
-            onChange={handleChange}
-          /> Saree Draping
-        </div>
-        <div>
-          <input
-            type="checkbox"
-            name="services"
-            value="Exhancements"
-            onChange={handleChange}
-          /> Nail Exhancements
-        </div>
-      </div>
-      <button type="submit">Submit</button>
-    </form>
+      </form>
     </div>
   );
 };
+
 export default MultiSelectForm;
+
+
+
+
+
+
+
+
+
+// import React, { useState } from 'react';
+// import { useNavigate } from 'react-router-dom';
+// import '../Pages/Beautypro.css';
+
+// const MultiSelectForm = () => {
+//   const navigate = useNavigate();
+//   const [formData, setFormData] = useState({
+//     services: [],
+//   });  
+
+//   const handleChange = (e) => {
+//     const { value, type, checked } = e.target;
+//     if (type === 'checkbox') {
+//       let newOptions = formData.services;
+//       if (checked) {
+//         newOptions.push(value);
+//       } else {
+//         newOptions = newOptions.filter(option => option !== value);
+//       }
+//       setFormData({ ...formData, services: newOptions });
+//     } else {
+//       // setFormData({ ...formData, [name]: value });
+//     }
+//   };  
+
+//   const handleSubmit = async (e) => {
+//     e.preventDefault();
+//     console.log(formData);
+//     try {
+//       const response = await fetch('http://localhost:3002/beauticianprofile/update', {
+//         method: 'POST',
+//         headers: {
+//           'Content-Type': 'application/json',
+//         },
+//         body: JSON.stringify(formData),
+//       });
+//       const result = await response.json();
+//       console.log(result);
+
+//       // Navigate to the desired page after successful submission
+//       navigate('/packages'); // Change '/packages' to your desired path
+//     } catch (error) {
+//       console.error('Error:', error);
+//     }
+//   };  
+
+//   return (
+//     <div className="beauty-form">
+//       <form onSubmit={handleSubmit}>
+//         <div>
+//           <label>Services:</label>
+//           {/* Your checkboxes */}
+//         </div>
+//         <button type="submit">Submit</button>
+//       </form>
+//     </div>
+//   );
+// };
+
+// export default MultiSelectForm;
