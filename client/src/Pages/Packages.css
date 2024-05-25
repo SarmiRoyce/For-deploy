@@ -9,10 +9,5 @@ a {
     font-weight: 800;
 }
 .pack {
-    /* display: inline; */
     display: flex;
-    /* justify-content: space-around; */
 }
-/* .card {
-    width: 180px;
-} */

@@ -1,5 +1,4 @@
 import React from 'react'
-// import image from '../Components/Gorgeous Queen.png';
 import Navbar from '../Components/nav';
 import './Login.css'
 import axios from "axios";
@@ -37,32 +36,6 @@ export default function Login() {
   };
 
 
-  // const handleSubmit = require (handleSubmit)
-  // const login = async () => {
-  //   if (email && password) {
-  //     try {
-  //       const response = await fetch("http://localhost:3002/user/login", {
-  //         method: "POST",
-  //         headers: {
-  //           Accept: "application/json",
-  //           "Content-Type": "application/json",
-  //         },
-  //         body: JSON.stringify({ email, password }),
-  //       });
-  //       console.log(response);
-  //       if (response.ok) {
-  //         const data = await response.json();
-  //         console.log(data);
-  //         localStorage.setItem("token", data.token);
-  //         navigate ("/Admin");
-  //       } else {
-  //         console.log("Invalid email or password");
-  //       }
-  //     } catch (error) {
-  //       console.log("Error logging in:", error);
-  //     }
-  //   }
-  // };
 
   return (
     <div>
@@ -75,7 +48,6 @@ export default function Login() {
     </div>
 
     <div className='login-text'>
-      {/* <img class="img3" src={image} style={{marginLeft:'80px'}}/><br/><br/> */}
       <h1 style={{marginLeft:'50px',fontWeight:'800'}}>Login</h1><br/>
       <label>Email Address</label>
       <input type='Email' placeholder='Enter your email'onChange={(e)=>setEmail(e.target.value)}></input><br/><br/>
@@ -95,7 +67,6 @@ export default function Login() {
 
   )
 }
-
 
 
 

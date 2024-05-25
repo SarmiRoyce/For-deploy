@@ -15,14 +15,7 @@ exports.getUser = (req, res) => {
 
 // Post
 exports.createUser = async (req, res) => { 
-    // const user = new User (req.body) 
-    // user.save()
-    // .then(() => {
-    //     res.status(201).send(user);
-    // })
-    // .catch(err => {
-    //     res.status(500).send(err);
-    // });
+ 
     try {
         const { firstname, lastname, email, password } = req.body;
         

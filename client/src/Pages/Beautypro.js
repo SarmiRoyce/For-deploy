@@ -192,12 +192,18 @@
 //   )
 // }
 
-// export default Beautyproimport React, { useState } from 'react';
-import { Link } from 'react-router-dom';
-import './Beautypro.css';
-import { useState } from 'react';
 
-const MultiSelectForm = () => {
+
+
+
+
+
+// export default Beautypro
+import { useState } from 'react';
+import { useNavigate } from 'react-router-dom'; 
+import '../Pages/Beautypro.css'
+
+const Beautypro = () => {
   const [formData, setFormData] = useState({ services: [] });
 
   const handleChange = (e) => {
@@ -215,13 +221,22 @@ const MultiSelectForm = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log('Selected Services:', formData.services);
     // Handle form submission (e.g., send the data to the server)
+    console.log('Submitted data:', formData); // Example log for now
+  };
+
+  const navigate = useNavigate(); // Get navigation function
+
+  const handleClick = () => {
+    const serviceData = formData.services; // Extract selected services
+
+    // Navigate to "/Beauty" and pass serviceData as state
+    navigate('/Profilebeauty', { state: { serviceData } });
   };
 
   return (
     <div className="beauty-form">
-      <form onSubmit={handleSubmit}>
+      <form onSubmit={handleSubmit} style={{width:'500px'}}>
         <div>
           <label>Services:</label>
           <div>
@@ -323,87 +338,14 @@ const MultiSelectForm = () => {
         </div>
 
         <div className="container14">
-          <Link
-            to={{
-              pathname: "/Profilebeauty",
-              state: { serviceData: formData.services }
-            }}
-          >
-            <button type="submit" onClick={handleSubmit}>Submit</button>
-          </Link>
+          <button type="button" className="btn btn-primary" onClick={handleClick}>
+            Services
+          </button>
         </div>
       </form>
     </div>
   );
 };
 
-export default MultiSelectForm;
+export default Beautypro;
 
-
-
-
-
-
-
-
-
-// import React, { useState } from 'react';
-// import { useNavigate } from 'react-router-dom';
-// import '../Pages/Beautypro.css';
-
-// const MultiSelectForm = () => {
-//   const navigate = useNavigate();
-//   const [formData, setFormData] = useState({
-//     services: [],
-//   });  
-
-//   const handleChange = (e) => {
-//     const { value, type, checked } = e.target;
-//     if (type === 'checkbox') {
-//       let newOptions = formData.services;
-//       if (checked) {
-//         newOptions.push(value);
-//       } else {
-//         newOptions = newOptions.filter(option => option !== value);
-//       }
-//       setFormData({ ...formData, services: newOptions });
-//     } else {
-//       // setFormData({ ...formData, [name]: value });
-//     }
-//   };  
-
-//   const handleSubmit = async (e) => {
-//     e.preventDefault();
-//     console.log(formData);
-//     try {
-//       const response = await fetch('http://localhost:3002/beauticianprofile/update', {
-//         method: 'POST',
-//         headers: {
-//           'Content-Type': 'application/json',
-//         },
-//         body: JSON.stringify(formData),
-//       });
-//       const result = await response.json();
-//       console.log(result);
-
-//       // Navigate to the desired page after successful submission
-//       navigate('/packages'); // Change '/packages' to your desired path
-//     } catch (error) {
-//       console.error('Error:', error);
-//     }
-//   };  
-
-//   return (
-//     <div className="beauty-form">
-//       <form onSubmit={handleSubmit}>
-//         <div>
-//           <label>Services:</label>
-//           {/* Your checkboxes */}
-//         </div>
-//         <button type="submit">Submit</button>
-//       </form>
-//     </div>
-//   );
-// };
-
-// export default MultiSelectForm;

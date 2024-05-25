@@ -1,4 +1,3 @@
-// AddProfile.js
 import React, { useState } from 'react';
 import './addProfile.css';
 
@@ -50,9 +49,7 @@ function AddProfile() {
         </label>
         <label>
           Packages:<br />
-          {/* <select name="packages" value={profile.packages} onChange={handleChange} multiple required> */}
           <select name="packages" value={profile.packages} onChange={handleChange} required>
-            {/* <option value="">Select a package</option> */}
             <option value="Hair Cutting">Hair Cutting</option>
             <option value="Nail Art">Nail Art</option>
             <option value="Manicure">Manicure</option>

@@ -1,86 +1,127 @@
     /* Book.css */
 
+
 .book-full {
   display: flex;
   justify-content: center;
   height: 90vh;
   background-color: rgb(52, 51, 51);
   align-items: center;
+  flex-direction: column;
+  padding: 20px;
 }
 
 .Book {
-  padding: 20px;
-  /* box-shadow: 0 4px 8px pink; */
   background-color: white;
+  padding: 30px;
   border-radius: 10px;
-  width: 550px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 600px;
   height: 680px;
+}
+
+.book-text {
   display: flex;
-  justify-content: space-evenly;
+  flex-direction: column;
+  align-items: flex-start;
 }
 
 .book-text h1 {
+  font-size: 32px;
   color: rgb(255, 98, 165);
   font-weight: 800;
   text-align: center;
-  font-size: 32px;
+  margin-bottom: 20px;
 }
 
 .book-text label {
+  margin-bottom: 5px;
+  color: #555;
+  font-size: 20px;
   display: block;
-  font-size: 23px;
 }
 
-.book-text input {
+.book-text input[type="text"],
+.book-text input[type="date"],
+.book-text input[type="time"] {
   width: 100%;
   padding: 10px;
-  height: 35px;
+  margin-bottom: 20px;
   border: 1px solid #ccc;
   border-radius: 5px;
-  box-sizing: border-box;
+}
+
+.book-text input[type="text"]:focus,
+.book-text input[type="date"]:focus,
+.book-text input[type="time"]:focus {
+  border-color: #007bff;
+  outline: none;
 }
 
 .btn6 {
-  padding: 10px 30px; 
-  font-size: 23px;
-  color: white;
   background-color: rgb(221, 23, 89); 
-  transition: background-color 0.3s;
+  color: white;
   border: none;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 23px;
   border-radius: 10px; 
-  cursor: pointer;
   margin-left: 80px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
 }
 
+.stripe {
+  margin-top: 15px;
 
-/* .book-text .btn6:hover {
-  background-color: #0056b3;
-} */
+}
 
+.btn-large {
+  padding: 15px 30px;
+  font-size: 1.2em;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
 
+.btn-large:hover {
+  background-color: #ffc0cb;
+}
 
+/* Responsive Design */
+@media (max-width: 768px) {
+  .Book {
+    padding: 20px;
+    width: 90%;
+  }
 
-/* @media (max-width: 600px) {
+  .book-text h1 {
+    font-size: 1.5em;
+  }
+
+  .btn-large {
+    width: 100%;
+    margin-right: 0;
+  }
+}
+
+@media (max-width: 480px) {
   .Book {
     padding: 15px;
   }
 
   .book-text h1 {
-    font-size: 20px;
+    font-size: 1.2em;
   }
-} */
 
+  .book-text label {
+    font-size: 1em;
+  }
 
-    /* @media (max-width: 600px) {
-      .form-container {
-        padding: 10px; 
-    
-      }
-      .form-input {
-        font-size: 14px;
-    
-      }
-      .form-button {
-        padding: 8px 16px; 
-      
-    } */
+  .btn-large {
+    padding: 10px 20px;
+    font-size: 1em;
+  }
+}
+

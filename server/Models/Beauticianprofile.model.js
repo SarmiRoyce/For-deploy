@@ -125,23 +125,6 @@
 // module.exports = profile
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 const mongoose = require('mongoose');
 
 const workSchema = new mongoose.Schema({
@@ -163,8 +146,6 @@ const profileSchema = new mongoose.Schema({
   experience: { type: String, required: true },
   location: { type: String, required: true },
   image: { type: String, required: true },
-  // services: { type: servicesSchema, required: true },
-  // services: {  HairCutting, NailArt, Manicure, Facial, Pedicure, EyebrowShape, HairColoring, NormalMakeup, BridalMakeup, HairStyle, SareeDraping, NailEnhancements, },
   services: {
     type: Array,
     default: [],

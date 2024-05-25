@@ -25,10 +25,6 @@ const schema = new Mongoose.Schema ({
         type:String,
         require:true,
     },
-    // packages: {
-    //     type:String,
-    //     require:true,
-    // },
     coursecertificates: {
         type:String,
         require:true,

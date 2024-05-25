@@ -1,5 +1,3 @@
-// import React from 'react'
-// import Profile from '../Pages/Profile';
 import React, {useState} from 'react';
 import StripeCheckout from "react-stripe-checkout"
 import Navbar from '../Components/nav';
@@ -68,12 +66,10 @@ function Book() {
                 token={makePayment}
                 name='Payment' 
                 amount={product.price * 100}
-                // shippingAddress
                 billingAddress
                 > 
             <div className='stripe'>
-                <button className='btn-large pink'  style={{borderRadius:'15px',backgroundColor:'pink',marginLeft:'50px'}}>Pay just {product.price} $</button>
-
+                <button className='btn-large pink'  style={{borderRadius:'15px',backgroundColor:'pink',marginRight: '200px'}}>Pay just {product.price} $</button>
             </div>
             </StripeCheckout>  
 
