@@ -233,7 +233,19 @@ function Packages() {
         {selectedPackage === 'Hair Cutting' && (
           <div>
             {/* Content for Hair Cutting */}
-            <div className="card" style={{ width: '18rem',marginTop:'30px' }}>
+            <div class="card" style={{width: '18rem',marginTop:'30px' }}>
+                    <img src="https://i.pinimg.com/736x/16/93/61/16936135a6fc4b080ccc22ecc39a7280.jpg" class="card-img-top" alt="..." style={{padding:'10px',width:'285px',height:'220px'}}/>
+                    <div class="card-body">
+                      <h5 class="card-title">Meenakshi</h5> <span class="fa fa-star checked" style={{color:'yellow'}}/>
+                      <span class="fa fa-star checked" style={{color:'yellow'}} />
+                      <span class="fa fa-star checked" style={{color:'yellow'}} />
+                      <span class="fa fa-star checked" style={{color:'yellow'}} />
+                      <span class="fa fa-star checked" style={{color:'yellow'}} /><br></br><br></br>
+                      <a href="/Profilebeauty"><button className='btn12'>View Profile</button></a>
+                    </div>
+            </div><br></br>
+
+            <div className="card" style={{ width: '18rem'}}>
               <img 
                 src="https://img.freepik.com/premium-photo/beautician-with-female-client-parlor-gorgeous-bridal-makeup_94574-2254.jpg" 
                 className="card-img-top" 
@@ -247,7 +259,7 @@ function Packages() {
                 <span className="fa fa-star checked" style={{ color: 'yellow' }} />
                 <span className="fa fa-star checked" style={{ color: 'yellow' }} />
                 <span className="fa fa-star checked" style={{ color: 'yellow' }} /><br /><br />
-                <a href="/Beauty"><button className='btn12'>View Profile</button></a>
+                <a href="/Profilebeauty"><button className='btn12'>View Profile</button></a>
               </div>
             </div><br />
 
@@ -265,7 +277,7 @@ function Packages() {
                 <span className="fa fa-star checked" style={{ color: 'yellow' }} />
                 <span className="fa fa-star checked" style={{ color: 'yellow' }} />
                 <span className="fa fa-star checked" style={{ color: 'yellow' }} /><br /><br />
-                <a href="/Beauty"><button className='btn12'>View Profile</button></a>
+                <a href="/Profilebeauty"><button className='btn12'>View Profile</button></a>
               </div>
             </div><br />
 
@@ -283,9 +295,10 @@ function Packages() {
                 <span className="fa fa-star checked" style={{ color: 'yellow' }} />
                 <span className="fa fa-star checked" style={{ color: 'yellow' }} />
                 <span className="fa fa-star checked" style={{ color: 'yellow' }} /><br /><br />
-                <a href="/Beauty"><button className='btn12'>View Profile</button></a>
+                <a href="/Profilebeauty"><button className='btn12'>View Profile</button></a>
               </div>
             </div><br />
+
           </div>
         )}
         {selectedPackage === 'Nail Art' && (
@@ -305,42 +318,28 @@ function Packages() {
                 <span className="fa fa-star checked" style={{ color: 'yellow' }} />
                 <span className="fa fa-star checked" style={{ color: 'yellow' }} />
                 <span className="fa fa-star checked" style={{ color: 'yellow' }} /><br /><br />
-                <a href="/Beauty"><button className='btn12'>View Profile</button></a>
+                <a href="/Profilebeauty"><button className='btn12'>View Profile</button></a>
               </div>
             </div><br />
-            <div class="card" style={{width: '18rem'}}>
-                    <img src="https://i.pinimg.com/736x/16/93/61/16936135a6fc4b080ccc22ecc39a7280.jpg" class="card-img-top" alt="..." style={{padding:'10px',width:'285px',height:'220px'}}/>
-                    <div class="card-body">
-                      <h5 class="card-title">Meenakshi</h5> <span class="fa fa-star checked" style={{color:'yellow'}}/>
-                      <span class="fa fa-star checked" style={{color:'yellow'}} />
-                      <span class="fa fa-star checked" style={{color:'yellow'}} />
-                      <span class="fa fa-star checked" style={{color:'yellow'}} />
-                      <span class="fa fa-star checked" style={{color:'yellow'}} /><br></br><br></br>
-                      <a href="/Beauty"><button className='btn12'>View Profile</button></a>
-                    </div>
-                    </div><br></br>
-          </div>
-        )}
-                {selectedPackage === 'Facial' && (
-          <div>
-            {/* Content for Nail Art */}
-            <div className="card" style={{ width: '18rem',marginTop:'30px' }}>
+
+            <div className="card" style={{ width: '18rem'}}>
               <img 
-                src="https://cdn0.weddingwire.in/vendor/3378/3_2/960/jpg/bridal-makeup-nivedita-kulkarni-makeup-artist-beautician-bridal-makeup7_15_293378-160793696530456.jpeg" 
+                src="https://img.freepik.com/premium-photo/beautician-with-female-client-parlor-gorgeous-bridal-makeup_94574-2254.jpg" 
                 className="card-img-top" 
-                alt="Keerthana" 
+                alt="Ann Julie" 
                 style={{ padding: '10px', width: '285px', height: '220px' }} 
               />
               <div className="card-body">
-                <h5 className="card-title">Keerthana</h5>
+                <h5 className="card-title">Ann Julie</h5>
                 <span className="fa fa-star checked" style={{ color: 'yellow' }} />
                 <span className="fa fa-star checked" style={{ color: 'yellow' }} />
                 <span className="fa fa-star checked" style={{ color: 'yellow' }} />
                 <span className="fa fa-star checked" style={{ color: 'yellow' }} />
                 <span className="fa fa-star checked" style={{ color: 'yellow' }} /><br /><br />
-                <a href="/Beauty"><button className='btn12'>View Profile</button></a>
+                <a href="/Profilebeauty"><button className='btn12'>View Profile</button></a>
               </div>
             </div><br />
+
             <div class="card" style={{width: '18rem'}}>
                     <img src="https://i.pinimg.com/736x/16/93/61/16936135a6fc4b080ccc22ecc39a7280.jpg" class="card-img-top" alt="..." style={{padding:'10px',width:'285px',height:'220px'}}/>
                     <div class="card-body">
@@ -349,12 +348,13 @@ function Packages() {
                       <span class="fa fa-star checked" style={{color:'yellow'}} />
                       <span class="fa fa-star checked" style={{color:'yellow'}} />
                       <span class="fa fa-star checked" style={{color:'yellow'}} /><br></br><br></br>
-                      <a href="/Beauty"><button className='btn12'>View Profile</button></a>
+                      <a href="/Profilebeauty"><button className='btn12'>View Profile</button></a>
                     </div>
-                    </div><br></br>
+            </div><br></br>
+
           </div>
         )}
-           {selectedPackage === 'Manicure' && (
+                {selectedPackage === 'Manicure' && (
           <div>
             {/* Content for Manicure */}
             <div className="card" style={{ width: '18rem',marginTop:'30px' }}>
@@ -371,9 +371,10 @@ function Packages() {
                 <span className="fa fa-star checked" style={{ color: 'yellow' }} />
                 <span className="fa fa-star checked" style={{ color: 'yellow' }} />
                 <span className="fa fa-star checked" style={{ color: 'yellow' }} /><br /><br />
-                <a href="/Beauty"><button className='btn12'>View Profile</button></a>
+                <a href="/Profilebeauty"><button className='btn12'>View Profile</button></a>
               </div>
             </div><br />
+
             <div class="card" style={{width: '18rem'}}>
                     <img src="https://i.pinimg.com/736x/16/93/61/16936135a6fc4b080ccc22ecc39a7280.jpg" class="card-img-top" alt="..." style={{padding:'10px',width:'285px',height:'220px'}}/>
                     <div class="card-body">
@@ -382,9 +383,187 @@ function Packages() {
                       <span class="fa fa-star checked" style={{color:'yellow'}} />
                       <span class="fa fa-star checked" style={{color:'yellow'}} />
                       <span class="fa fa-star checked" style={{color:'yellow'}} /><br></br><br></br>
-                      <a href="/Beauty"><button className='btn12'>View Profile</button></a>
+                      <a href="/Profilebeauty"><button className='btn12'>View Profile</button></a>
                     </div>
-                    </div><br></br>
+            </div><br></br>
+
+            <div className="card" style={{ width: '18rem' }}>
+              <img 
+                src="https://img.freepik.com/premium-photo/beautician-with-female-client-parlor-gorgeous-bridal-makeup_94574-2254.jpg" 
+                className="card-img-top" 
+                alt="Ann Julie" 
+                style={{ padding: '10px', width: '285px', height: '220px' }} 
+              />
+              <div className="card-body">
+                <h5 className="card-title">Ann Julie</h5>
+                <span className="fa fa-star checked" style={{ color: 'yellow' }} />
+                <span className="fa fa-star checked" style={{ color: 'yellow' }} />
+                <span className="fa fa-star checked" style={{ color: 'yellow' }} />
+                <span className="fa fa-star checked" style={{ color: 'yellow' }} />
+                <span className="fa fa-star checked" style={{ color: 'yellow' }} /><br /><br />
+                <a href="/Profilebeauty"><button className='btn12'>View Profile</button></a>
+              </div>
+            </div><br />
+
+          </div>
+        )}
+           {selectedPackage === 'Facial' && (
+          <div>
+            {/* Content for Facial */}
+            <div className="card" style={{ width: '18rem',marginTop:'30px' }}>
+              <img 
+                src="https://cdn0.weddingwire.in/vendor/3378/3_2/960/jpg/bridal-makeup-nivedita-kulkarni-makeup-artist-beautician-bridal-makeup7_15_293378-160793696530456.jpeg" 
+                className="card-img-top" 
+                alt="Keerthana" 
+                style={{ padding: '10px', width: '285px', height: '220px' }} 
+              />
+              <div className="card-body">
+                <h5 className="card-title">Keerthana</h5>
+                <span className="fa fa-star checked" style={{ color: 'yellow' }} />
+                <span className="fa fa-star checked" style={{ color: 'yellow' }} />
+                <span className="fa fa-star checked" style={{ color: 'yellow' }} />
+                <span className="fa fa-star checked" style={{ color: 'yellow' }} />
+                <span className="fa fa-star checked" style={{ color: 'yellow' }} /><br /><br />
+                <a href="/Profilebeauty"><button className='btn12'>View Profile</button></a>
+              </div>
+            </div><br />
+
+            <div className="card" style={{ width: '18rem'}}>
+              <img 
+                src="https://img.freepik.com/premium-photo/beautician-with-female-client-parlor-gorgeous-bridal-makeup_94574-2254.jpg" 
+                className="card-img-top" 
+                alt="Ann Julie" 
+                style={{ padding: '10px', width: '285px', height: '220px' }} 
+              />
+              <div className="card-body">
+                <h5 className="card-title">Ann Julie</h5>
+                <span className="fa fa-star checked" style={{ color: 'yellow' }} />
+                <span className="fa fa-star checked" style={{ color: 'yellow' }} />
+                <span className="fa fa-star checked" style={{ color: 'yellow' }} />
+                <span className="fa fa-star checked" style={{ color: 'yellow' }} />
+                <span className="fa fa-star checked" style={{ color: 'yellow' }} /><br /><br />
+                <a href="/Profilebeauty"><button className='btn12'>View Profile</button></a>
+              </div>
+            </div><br />
+
+            <div class="card" style={{width: '18rem'}}>
+                    <img src="https://i.pinimg.com/736x/16/93/61/16936135a6fc4b080ccc22ecc39a7280.jpg" class="card-img-top" alt="..." style={{padding:'10px',width:'285px',height:'220px'}}/>
+                    <div class="card-body">
+                      <h5 class="card-title">Meenakshi</h5> <span class="fa fa-star checked" style={{color:'yellow'}}/>
+                      <span class="fa fa-star checked" style={{color:'yellow'}} />
+                      <span class="fa fa-star checked" style={{color:'yellow'}} />
+                      <span class="fa fa-star checked" style={{color:'yellow'}} />
+                      <span class="fa fa-star checked" style={{color:'yellow'}} /><br></br><br></br>
+                      <a href="/Profilebeauty"><button className='btn12'>View Profile</button></a>
+                    </div>
+            </div><br></br>
+
+          </div>
+        )}
+         {selectedPackage === 'Pedicure' && (
+          <div>
+            {/* Content for Pedicure */}
+            <div className="card" style={{ width: '18rem',marginTop:'30px' }}>
+              <img 
+                src="https://cdn0.weddingwire.in/vendor/3378/3_2/960/jpg/bridal-makeup-nivedita-kulkarni-makeup-artist-beautician-bridal-makeup7_15_293378-160793696530456.jpeg" 
+                className="card-img-top" 
+                alt="Keerthana" 
+                style={{ padding: '10px', width: '285px', height: '220px' }} 
+              />
+              <div className="card-body">
+                <h5 className="card-title">Keerthana</h5>
+                <span className="fa fa-star checked" style={{ color: 'yellow' }} />
+                <span className="fa fa-star checked" style={{ color: 'yellow' }} />
+                <span className="fa fa-star checked" style={{ color: 'yellow' }} />
+                <span className="fa fa-star checked" style={{ color: 'yellow' }} />
+                <span className="fa fa-star checked" style={{ color: 'yellow' }} /><br /><br />
+                <a href="/Profilebeauty"><button className='btn12'>View Profile</button></a>
+              </div>
+            </div><br />
+
+            <div className="card" style={{ width: '18rem' }}>
+              <img 
+                src="https://saloninsrilanka.weebly.com/uploads/1/1/3/0/113028645/kk_1_orig.jpg" 
+                className="card-img-top" 
+                alt="Diya" 
+                style={{ padding: '10px', width: '285px', height: '220px' }} 
+              />
+              <div className="card-body">
+                <h5 className="card-title">Diya</h5>
+                <span className="fa fa-star checked" style={{ color: 'yellow' }} />
+                <span className="fa fa-star checked" style={{ color: 'yellow' }} />
+                <span className="fa fa-star checked" style={{ color: 'yellow' }} />
+                <span className="fa fa-star checked" style={{ color: 'yellow' }} />
+                <span className="fa fa-star checked" style={{ color: 'yellow' }} /><br /><br />
+                <a href="/Profilebeauty"><button className='btn12'>View Profile</button></a>
+              </div>
+            </div><br />
+
+            <div class="card" style={{width: '18rem'}}>
+                    <img src="https://i.pinimg.com/736x/16/93/61/16936135a6fc4b080ccc22ecc39a7280.jpg" class="card-img-top" alt="..." style={{padding:'10px',width:'285px',height:'220px'}}/>
+                    <div class="card-body">
+                      <h5 class="card-title">Meenakshi</h5> <span class="fa fa-star checked" style={{color:'yellow'}}/>
+                      <span class="fa fa-star checked" style={{color:'yellow'}} />
+                      <span class="fa fa-star checked" style={{color:'yellow'}} />
+                      <span class="fa fa-star checked" style={{color:'yellow'}} />
+                      <span class="fa fa-star checked" style={{color:'yellow'}} /><br></br><br></br>
+                      <a href="/Profilebeauty"><button className='btn12'>View Profile</button></a>
+                    </div>
+            </div><br></br>
+
+          </div>
+        )}
+         {selectedPackage === 'Eyebrow Shape' && (
+          <div>
+            {/* Content for Eyebrow Shape */}
+            <div className="card" style={{ width: '18rem',marginTop:'30px' }}>
+              <img 
+                src="https://saloninsrilanka.weebly.com/uploads/1/1/3/0/113028645/kk_1_orig.jpg" 
+                className="card-img-top" 
+                alt="Diya" 
+                style={{ padding: '10px', width: '285px', height: '220px' }} 
+              />
+              <div className="card-body">
+                <h5 className="card-title">Diya</h5>
+                <span className="fa fa-star checked" style={{ color: 'yellow' }} />
+                <span className="fa fa-star checked" style={{ color: 'yellow' }} />
+                <span className="fa fa-star checked" style={{ color: 'yellow' }} />
+                <span className="fa fa-star checked" style={{ color: 'yellow' }} />
+                <span className="fa fa-star checked" style={{ color: 'yellow' }} /><br /><br />
+                <a href="/Profilebeauty"><button className='btn12'>View Profile</button></a>
+              </div>
+            </div><br />
+
+            <div className="card" style={{ width: '18rem'}}>
+              <img 
+                src="https://cdn0.weddingwire.in/vendor/3378/3_2/960/jpg/bridal-makeup-nivedita-kulkarni-makeup-artist-beautician-bridal-makeup7_15_293378-160793696530456.jpeg" 
+                className="card-img-top" 
+                alt="Keerthana" 
+                style={{ padding: '10px', width: '285px', height: '220px' }} 
+              />
+              <div className="card-body">
+                <h5 className="card-title">Keerthana</h5>
+                <span className="fa fa-star checked" style={{ color: 'yellow' }} />
+                <span className="fa fa-star checked" style={{ color: 'yellow' }} />
+                <span className="fa fa-star checked" style={{ color: 'yellow' }} />
+                <span className="fa fa-star checked" style={{ color: 'yellow' }} />
+                <span className="fa fa-star checked" style={{ color: 'yellow' }} /><br /><br />
+                <a href="/Profilebeauty"><button className='btn12'>View Profile</button></a>
+              </div>
+            </div><br />
+
+            <div class="card" style={{width: '18rem'}}>
+                    <img src="https://i.pinimg.com/736x/16/93/61/16936135a6fc4b080ccc22ecc39a7280.jpg" class="card-img-top" alt="..." style={{padding:'10px',width:'285px',height:'220px'}}/>
+                    <div class="card-body">
+                      <h5 class="card-title">Meenakshi</h5> <span class="fa fa-star checked" style={{color:'yellow'}}/>
+                      <span class="fa fa-star checked" style={{color:'yellow'}} />
+                      <span class="fa fa-star checked" style={{color:'yellow'}} />
+                      <span class="fa fa-star checked" style={{color:'yellow'}} />
+                      <span class="fa fa-star checked" style={{color:'yellow'}} /><br></br><br></br>
+                      <a href="/Profilebeauty"><button className='btn12'>View Profile</button></a>
+                    </div>
+            </div><br></br>
+
           </div>
         )}
         {/* Add content for other packages */}

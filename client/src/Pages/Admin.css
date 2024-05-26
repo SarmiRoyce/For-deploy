@@ -4,7 +4,12 @@ body {
     background-color: #f0f2f5;
   }
   
-  h1, h2 {
+  h1 {
+    color: #333;
+    text-align: center;
+  }
+
+  h2 {
     color: #333;
   }
   
@@ -140,3 +145,36 @@ body {
     background-color: #3498db;
   }
   
+
+
+/* Responsive Styles */
+@media (max-width: 992px) {
+  .sidebar {
+    width: 180px;
+  }
+
+  .main-content {
+    margin-left: 200px;
+  }
+
+  .data-table,
+  .user-form {
+    margin-left: 0; 
+    margin-right: 0; 
+  }
+}
+
+@media (max-width: 576px) {
+  .sidebar {
+    width: 160px; 
+  }
+
+  .main-content {
+    margin-left: 180px;
+  }
+
+  .data-table,
+  .user-form {
+    padding: 10px; 
+  }
+}

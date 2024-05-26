@@ -48,7 +48,7 @@ function Footer() {
             <a href="#!" class="text-body">E-mail: gorgeousqueen@gmail.com</a>
           </li>
           <li>
-            <a href="#!" class="text-body">Telephone No: +94 77 123 4567</a>
+            <a href="#!" class="text-body">Telephone No: +94 76 653 8473</a>
           </li>
 
         </ul>

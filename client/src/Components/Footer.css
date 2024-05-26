@@ -1,18 +1,15 @@
-footer {
+   footer {
     justify-content: space-between;
     text-align: center;
     padding: 20px 0;
     margin-top: 60px;
   }
   
-  
   footer .row {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    margin-left: 300px;
   }
-  
   
   footer .text-uppercase {
     font-weight: bold;
@@ -22,14 +19,27 @@ footer {
     padding: 12px 0;
     border-top: 1px solid #dee2e6;
   }
-
-
-
-
-
-  /* @media (max-width: 767.98px) {
+  
+  /* Responsive Styles */
+  @media (max-width: 768px) {
+    footer {
+      padding: 10px 0;
+      margin-top: 30px;
+    }
+    
     footer .row {
       flex-direction: column;
+      align-items: center;
+    }
+    
+    footer .text-center {
+      border-top: none;
+      padding-top: 10px;
+    }
+    
+    footer .text-uppercase {
+      text-align: center;
+      margin-bottom: 10px;
     }
   }
-   */
+  

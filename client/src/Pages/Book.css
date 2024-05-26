@@ -1,6 +1,3 @@
-    /* Book.css */
-
-
 .book-full {
   display: flex;
   justify-content: center;
@@ -88,6 +85,20 @@
 .btn-large:hover {
   background-color: #ffc0cb;
 }
+
+
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .Book {
+    padding: 20px; 
+  }
+
+  .btn6 {
+    margin-left: 0; 
+  }
+}
+
 
 /* Responsive Design */
 @media (max-width: 768px) {

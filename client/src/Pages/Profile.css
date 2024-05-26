@@ -23,7 +23,6 @@
     width: 200px;
     height: 180px;
     border-radius: 50%;
-    /* object-fit: cover; */
   }
   
   .profile-header input {
@@ -142,3 +141,26 @@
     margin-top: 10px;
   }
   
+
+  /* Responsive Styles */
+@media (max-width: 768px) {
+  .pro-form {
+      width: 95%;
+  }
+
+  .profile-header img {
+      width: 120px; 
+      height: 120px; 
+  }
+}
+
+@media (max-width: 576px) {
+  .pro-form {
+      width: 100%; 
+  }
+
+  .profile-header img {
+      width: 100px; 
+      height: 100px; 
+  }
+}

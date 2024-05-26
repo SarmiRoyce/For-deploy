@@ -38,8 +38,9 @@ function ViewProfile() {
   }
 
   return (
-    <div>
-      <div className="profile-header">
+    <div className='showprofile2'>
+    <div className='showprofile'>
+      <div className="profile-header5">
         <img src={profileData.image} alt="Beautician's Photo" />
         <h1>{profileData.name}</h1>
         <h2>{profileData.title}</h2>
@@ -47,7 +48,7 @@ function ViewProfile() {
         <p>{profileData.location}</p>
       </div>
 
-      <div className="container">
+      <div className="container20">
         <h3 style={{ fontWeight: '800' }}>Services Offered</h3>
         <ul>
           {profileData.services && Object.keys(profileData.services).map((service, index) => (
@@ -56,7 +57,7 @@ function ViewProfile() {
         </ul>
       </div>
 
-      <div className="container portfolio">
+      <div className="container29 portfolio">
         <h2 style={{ fontWeight: '600', marginTop: '20px', textAlign: 'center' }}>Works</h2><br />
         <div className="row">
           {profileData.works && profileData.works.map((work, index) => (
@@ -68,7 +69,7 @@ function ViewProfile() {
         </div>
       </div><br />
 
-      <div className="container contact">
+      <div className="container30 contact">
         <h2 style={{ fontWeight: '600' }}>Contact Information</h2><br />
         <p>Email: {profileData.email}</p>
         <p>Instagram: {profileData.instagram}</p>
@@ -83,6 +84,7 @@ function ViewProfile() {
         
         </div>
       </div>
+    </div>
     </div>
   );
 }

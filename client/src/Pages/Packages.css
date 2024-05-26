@@ -11,3 +11,17 @@ a {
 .pack {
     display: flex;
 }
+
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .beauty h1 {
+        font-size: 2em; 
+    }
+}
+
+@media (max-width: 576px) {
+    .beauty h1 {
+        font-size: 1.5em;
+    }
+}

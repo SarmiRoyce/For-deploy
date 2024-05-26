@@ -35,3 +35,43 @@
     background-color: rgb(221, 23, 89); 
     transition: background-color 0.3s;
 }
+
+
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .Login {
+      padding: 20px;
+    }
+  
+    .login-text label {
+      font-size: 18px;
+    }
+  
+    .login-text input {
+      height: 40px;
+    }
+  
+    .btn4 {
+      font-size: 20px;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .Login {
+      padding: 10px;
+    }
+  
+    .login-text label {
+      font-size: 16px;
+    }
+  
+    .login-text input {
+      height: 35px;
+      font-size: 14px;
+    }
+  
+    .btn4 {
+      font-size: 18px;
+    }
+  }

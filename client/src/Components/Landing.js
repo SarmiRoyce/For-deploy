@@ -26,7 +26,7 @@ function Navbar1() {
                 
 
             </div>
-        // </div>
+         </div>
     )
 };
 
