@@ -594,7 +594,7 @@ export default Packages
 
 //   // Fetch profiles data from the backend
 //   useEffect(() => {
-//     fetch('http://localhost:3002/beauticianprofile/view') // Adjust the endpoint as necessary
+//     fetch('cat /proc/sys/fs/inotify/max_user_watches/beauticianprofile/view') // Adjust the endpoint as necessary
 //       .then(response => response.json())
 //       .then(data => {
 //         if (Array.isArray(data)) {

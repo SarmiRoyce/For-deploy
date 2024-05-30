@@ -148,13 +148,13 @@
 //   }, []);
 
 //   const fetchUsers = async () => {
-//     const response = await fetch('http://localhost:3002/beautician/view');
+//     const response = await fetch('cat /proc/sys/fs/inotify/max_user_watches/beautician/view');
 //     const data = await response.json();
 //     setUsers(data);
 //   };
 
 //   const handleCreateUser = async () => {
-//     const response = await fetch('http://localhost:3002/beautician/create', {
+//     const response = await fetch('cat /proc/sys/fs/inotify/max_user_watches/beautician/create', {
 //       method: 'POST',
 //       headers: {
 //         'Content-Type': 'application/json',
@@ -167,7 +167,7 @@
 //   };
 
 //   const handleUpdateUser = async (id) => {
-//     const response = await fetch(`http://localhost:3002/beautician/update/${id}`, {
+//     const response = await fetch(`cat /proc/sys/fs/inotify/max_user_watches/beautician/update/${id}`, {
 //       method: 'PUT',
 //       headers: {
 //         'Content-Type': 'application/json',
@@ -180,7 +180,7 @@
 //   };
 
 //   const handleDeleteUser = async (id) => {
-//     await fetch(`http://localhost:3002/beautician/delete/${id}`, {
+//     await fetch(`cat /proc/sys/fs/inotify/max_user_watches/beautician/delete/${id}`, {
 //       method: 'DELETE',
 //     });
 //     setUsers(users.filter((user) => user._id !== id));
@@ -296,7 +296,7 @@
 
 //   const fetchUsers = async () => {
 //     try {
-//       const response = await fetch('http://localhost:3002/beautician/view');
+//       const response = await fetch('cat /proc/sys/fs/inotify/max_user_watches/beautician/view');
 //       if (!response.ok) throw new Error('Network response was not ok');
 //       const data = await response.json();
 //       setUsers(data);
@@ -307,7 +307,7 @@
 
 //   const fetchPayments = async () => {
 //     try {
-//       const response = await fetch('http://localhost:3002/payments');
+//       const response = await fetch('cat /proc/sys/fs/inotify/max_user_watches/payments');
 //       if (!response.ok) throw new Error('Network response was not ok');
 //       const data = await response.json();
 //       setPayments(data);
@@ -318,7 +318,7 @@
 
 //   const handleCreateUser = async () => {
 //     try {
-//       const response = await fetch('http://localhost:3002/beautician/create', {
+//       const response = await fetch('cat /proc/sys/fs/inotify/max_user_watches/beautician/create', {
 //         method: 'POST',
 //         headers: {
 //           'Content-Type': 'application/json',
@@ -336,7 +336,7 @@
 
 //   const handleUpdateUser = async (id) => {
 //     try {
-//       const response = await fetch(`http://localhost:3002/beautician/update/${id}`, {
+//       const response = await fetch(`cat /proc/sys/fs/inotify/max_user_watches/beautician/update/${id}`, {
 //         method: 'PUT',
 //         headers: {
 //           'Content-Type': 'application/json',
@@ -354,7 +354,7 @@
 
 //   const handleDeleteUser = async (id) => {
 //     try {
-//       const response = await fetch(`http://localhost:3002/beautician/delete/${id}`, {
+//       const response = await fetch(`cat /proc/sys/fs/inotify/max_user_watches/beautician/delete/${id}`, {
 //         method: 'DELETE',
 //       });
 //       if (!response.ok) throw new Error('Network response was not ok');
@@ -366,7 +366,7 @@
 
 //   const handleVerifyBeautician = async (id) => {
 //     try {
-//       const response = await fetch(`http://localhost:3002/beautician/verify/${id}`, {
+//       const response = await fetch(`cat /proc/sys/fs/inotify/max_user_watches/beautician/verify/${id}`, {
 //         method: 'PUT',
 //         headers: {
 //           'Content-Type': 'application/json',
@@ -514,13 +514,13 @@ function Admin() {
   }, []);
 
   const fetchUsers = async () => {
-    const response = await fetch('http://localhost:3002/beautician/view');
+    const response = await fetch('cat /proc/sys/fs/inotify/max_user_watches/beautician/view');
     const data = await response.json();
     setUsers(data);
   };
 
   const handleCreateUser = async () => {
-    const response = await fetch('http://localhost:3002/beautician/create', {
+    const response = await fetch('cat /proc/sys/fs/inotify/max_user_watches/beautician/create', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
@@ -533,7 +533,7 @@ function Admin() {
   };
 
   const handleUpdateUser = async (id) => {
-    const response = await fetch(`http://localhost:3002/beautician/update/${id}`, {
+    const response = await fetch(`cat /proc/sys/fs/inotify/max_user_watches/beautician/update/${id}`, {
       method: 'PUT',
       headers: {
         'Content-Type': 'application/json',
@@ -546,7 +546,7 @@ function Admin() {
   };
 
   const handleDeleteUser = async (id) => {
-    await fetch(`http://localhost:3002/beautician/delete/${id}`, {
+    await fetch(`cat /proc/sys/fs/inotify/max_user_watches/beautician/delete/${id}`, {
       method: 'DELETE',
     });
     setUsers(users.filter((user) => user._id !== id));
@@ -557,7 +557,7 @@ function Admin() {
   };
 
   const handleVerifyUser = async (id) => {
-    const response = await fetch(`http://localhost:3002/beautician/verify/${id}`, {
+    const response = await fetch(`cat /proc/sys/fs/inotify/max_user_watches/beautician/verify/${id}`, {
       method: 'PUT',
       headers: {
         'Content-Type': 'application/json',

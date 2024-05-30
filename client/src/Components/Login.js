@@ -14,7 +14,7 @@ export default function Login() {
     e.preventDefault();
     const userdata = { email, password };
     
-    fetch("http://localhost:3002/user/login", {
+    fetch("cat /proc/sys/fs/inotify/max_user_watches/user/login", {
       method: 'POST',
       headers: {
           'Content-Type': 'application/json'

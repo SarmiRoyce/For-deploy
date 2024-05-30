@@ -65,7 +65,7 @@ function SignUpPage() {
 
     console.log(userData);
 
-    fetch('http://localhost:3002/beautician/create', {
+    fetch('cat /proc/sys/fs/inotify/max_user_watches/beautician/create', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',

@@ -8,7 +8,7 @@ function ViewProfile() {
   useEffect(() => {
     const fetchProfileData = async () => {
       try {
-        const response = await fetch('http://localhost:3002/beauticianprofile/view');
+        const response = await fetch('cat /proc/sys/fs/inotify/max_user_watches/beauticianprofile/view');
         if (!response.ok) {
           throw new Error(`Failed to fetch profile data: ${response.statusText}`);
         }

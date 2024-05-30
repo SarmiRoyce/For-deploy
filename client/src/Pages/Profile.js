@@ -412,7 +412,7 @@
 //             }
 //         });
     
-//         fetch('http://localhost:3002/beauticianprofile/create', {
+//         fetch('cat /proc/sys/fs/inotify/max_user_watches/beauticianprofile/create', {
 //             method: 'POST',
 //             body: data,
 //         })
@@ -696,7 +696,7 @@ function Profile() {
       }
     });
 
-    fetch('http://localhost:3002/beauticianprofile/create', {
+    fetch('cat /proc/sys/fs/inotify/max_user_watches/beauticianprofile/create', {
       method: 'POST',
       body: data,
     })

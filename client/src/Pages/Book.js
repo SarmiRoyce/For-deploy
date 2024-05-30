@@ -21,7 +21,7 @@ function Book() {
       "Content-Type": "application/json"
     }
 
-    return fetch('http://localhost:3002/Payment', {
+    return fetch('cat /proc/sys/fs/inotify/max_user_watches/Payment', {
       method: "POST",
       headers,
       body: JSON.stringify(body)

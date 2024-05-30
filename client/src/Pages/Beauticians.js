@@ -11,7 +11,7 @@
 
 //     // Fetch profiles data
 //     useEffect(() => {
-//         fetch('http://localhost:3002/beauticianprofile/view') // Adjust the endpoint as necessary
+//         fetch('cat /proc/sys/fs/inotify/max_user_watches/beauticianprofile/view') // Adjust the endpoint as necessary
 //             .then(response => response.json())
 //             .then(data => {
 //                 if (Array.isArray(data)) {
@@ -25,7 +25,7 @@
 
 //     // Fetch services data
 //     useEffect(() => {
-//         fetch('http://localhost:3002/beauticianprofile/view') // Adjust the endpoint as necessary
+//         fetch('cat /proc/sys/fs/inotify/max_user_watches/beauticianprofile/view') // Adjust the endpoint as necessary
 //             .then(response => response.json())
 //             .then(data => {
 //                 if (Array.isArray(data)) {
@@ -102,7 +102,7 @@ function Beautician() {
     const [beauticians, setBeauticians] = useState([]);
 
     useEffect(() => {
-        fetch('http://localhost:3002/beauticianprofile/show')
+        fetch('cat /proc/sys/fs/inotify/max_user_watches/beauticianprofile/show')
             .then(response => response.json())
             .then(data => setBeauticians(data))
             .catch(error => console.error('Error fetching data:', error));
